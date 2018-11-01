@@ -1,0 +1,1553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+    <option name="FILTER_RESOLVED_ITEMS" value="false" />
+  </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/style/style.css" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9edf141a-b348-4e7d-81f9-ea6a17098fa4" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <executablePath>composer</executablePath>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="camera.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/images/camera.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="28" column="101" selection-start-line="28" selection-start-column="101" selection-end-line="28" selection-end-column="101" />
+              <folding>
+                <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comment_.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/js/comment_.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="photo.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/js/photo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="save_image.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/save_image.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="49" column="84" lean-forward="true" selection-start-line="49" selection-start-column="84" selection-end-line="49" selection-end-column="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logout.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/logout.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="125" column="19" lean-forward="true" selection-start-line="125" selection-start-column="19" selection-end-line="125" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comments.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/comments.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/setup.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/profile.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1464">
+              <caret line="31" column="49" lean-forward="true" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fpass.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fpass.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="37" column="58" lean-forward="true" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>$row['imageid'</find>
+      <find>$row['imageid']</find>
+      <find>self::</find>
+      <find>can</find>
+      <find>label</find>
+      <find>pic</find>
+      <find>container</find>
+      <find>grid</find>
+    </findStrings>
+    <dirStrings>
+      <dir>C:\Bitnami\wampstack-7.1.14-0\apache2\htdocs\Camagru</dir>
+    </dirStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/images/camera.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/config/database.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$USER_HOME$/Downloads/camera.php" />
+        <option value="$PROJECT_DIR$/canvas.php" />
+        <option value="$PROJECT_DIR$/camera_style.css" />
+        <option value="$PROJECT_DIR$/photo.js" />
+        <option value="$PROJECT_DIR$/camera.php" />
+        <option value="$PROJECT_DIR$/index.css" />
+        <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/../camera/config/database.php" />
+        <option value="$PROJECT_DIR$/../camera/camera/save_image.php" />
+        <option value="$PROJECT_DIR$/../camera/htmls/loggedin.php" />
+        <option value="chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/adblock-uiscripts-rightclick_hook.js" />
+        <option value="chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.postload.js" />
+        <option value="$PROJECT_DIR$/../../../php/etc/php.ini" />
+        <option value="/MySQL Fragment (setup.php:793).sql" />
+        <option value="$PROJECT_DIR$/../Camagruv/resetpass.php" />
+        <option value="$PROJECT_DIR$/images/user_prof.php" />
+        <option value="$PROJECT_DIR$/../../../php/php.ini" />
+        <option value="$PROJECT_DIR$/logout.php" />
+        <option value="$PROJECT_DIR$/user_prof.php" />
+        <option value="$PROJECT_DIR$/images/upload_.js" />
+        <option value="$PROJECT_DIR$/fpass.php" />
+        <option value="$PROJECT_DIR$/verify.php" />
+        <option value="$PROJECT_DIR$/styles.css" />
+        <option value="$PROJECT_DIR$/images/getmore.php" />
+        <option value="$PROJECT_DIR$/resetpass.php" />
+        <option value="$PROJECT_DIR$/profile.php" />
+        <option value="$PROJECT_DIR$/register.php" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/config/conn.php" />
+        <option value="$PROJECT_DIR$/images/upload.php" />
+        <option value="$PROJECT_DIR$/images/photo.js" />
+        <option value="$PROJECT_DIR$/images/delete.php" />
+        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/images/comment_.js" />
+        <option value="$PROJECT_DIR$/images/scroll.js" />
+        <option value="$PROJECT_DIR$/images/camera.php" />
+        <option value="$PROJECT_DIR$/src/logout.php" />
+        <option value="$PROJECT_DIR$/src/login.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/images/Gallery.php" />
+        <option value="$PROJECT_DIR$/images/save_image.php" />
+        <option value="$PROJECT_DIR$/images/comments.php" />
+        <option value="$PROJECT_DIR$/images/js/comment_.js" />
+        <option value="$PROJECT_DIR$/src/fpass.php" />
+        <option value="$PROJECT_DIR$/config/setup.php" />
+        <option value="$PROJECT_DIR$/src/register.php" />
+        <option value="$PROJECT_DIR$/src/profile.php" />
+        <option value="$PROJECT_DIR$/images/js/photo.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server debugger_id="php.debugger.ZendDebugger" host="localhost" id="3bf7a547-2457-4238-b48e-e61647c9e6e8" name="Unnamed" port="8080" use_path_mappings="true" />
+    </servers>
+  </component>
+  <component name="PhpWebServerValidation" path_to_validation_script="C:\Bitnami\wampstack-7.1.14-0\apache2\htdocs\Camagru" selected_validation_type="LOCAL" web_path_to_validation_script="http://localhost/" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.1" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Camagru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Camagru" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/style" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/images/js" />
+      <recent name="C:\Bitnami\wampstack-7.1.14-0\apache2\htdocs\Camagru" />
+      <recent name="C:\Bitnami\wampstack-7.1.14-0\apache2\htdocs\Camagru\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Bitnami\wampstack-7.1.14-0\apache2\htdocs\Camagru\images" />
+      <recent name="C:\Bitnami\wampstack-7.1.14-0\apache2\htdocs\Camagru" />
+      <recent name="C:\Bitnami\wampstack-7.1.14-0\apache2\htdocs\Camagru\config" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.camera.php">
+    <configuration name="Gallery.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/Camagru/images/Gallery.php" />
+    <configuration name="camera.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/Camagru/images/camera.php" />
+    <configuration name="register.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/Camagru/register.php" />
+    <configuration name="photo.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/images/js/photo.js" working-dir="$PROJECT_DIR$/images" />
+    <configuration name="comments.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/images/comments.php" />
+    <list>
+      <item itemvalue="JavaScript Debug.register.php" />
+      <item itemvalue="JavaScript Debug.camera.php" />
+      <item itemvalue="JavaScript Debug.Gallery.php" />
+      <item itemvalue="PHP Script.comments.php" />
+      <item itemvalue="Node.js.photo.js" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.camera.php" />
+        <item itemvalue="Node.js.photo.js" />
+        <item itemvalue="JavaScript Debug.Gallery.php" />
+        <item itemvalue="PHP Script.comments.php" />
+        <item itemvalue="JavaScript Debug.register.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9edf141a-b348-4e7d-81f9-ea6a17098fa4" name="Default" comment="" />
+      <created>1520241706648</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1520241706648</updated>
+      <workItem from="1520241713532" duration="12172000" />
+      <workItem from="1520338260861" duration="32127000" />
+      <workItem from="1520497235560" duration="21471000" />
+      <workItem from="1520588531001" duration="74837000" />
+      <workItem from="1520927348766" duration="13043000" />
+      <workItem from="1521121818500" duration="5743000" />
+      <workItem from="1521283196242" duration="25492000" />
+      <workItem from="1521483782392" duration="19629000" />
+      <workItem from="1521632702128" duration="7842000" />
+      <workItem from="1521712667384" duration="5338000" />
+      <workItem from="1521835557387" duration="4143000" />
+      <workItem from="1522776120557" duration="20000" />
+      <workItem from="1522849263656" duration="604000" />
+      <workItem from="1522905619769" duration="1191000" />
+      <workItem from="1523464254363" duration="4499000" />
+      <workItem from="1523602146828" duration="130000" />
+      <workItem from="1523604148594" duration="199000" />
+      <workItem from="1523807726018" duration="19611000" />
+      <workItem from="1523908995566" duration="1547000" />
+      <workItem from="1523948119530" duration="2906000" />
+      <workItem from="1524167085211" duration="37119000" />
+      <workItem from="1524474578716" duration="5452000" />
+      <workItem from="1524487454249" duration="663000" />
+      <workItem from="1524563230131" duration="19060000" />
+      <workItem from="1524641680227" duration="3903000" />
+      <workItem from="1524670228135" duration="11055000" />
+      <workItem from="1524833286493" duration="11091000" />
+      <workItem from="1525004276901" duration="118000" />
+      <workItem from="1525073579966" duration="16642000" />
+      <workItem from="1525167949074" duration="40773000" />
+      <workItem from="1525332436792" duration="23690000" />
+      <workItem from="1525418718369" duration="43245000" />
+      <workItem from="1540280335728" duration="6670000" />
+      <workItem from="1540295438710" duration="6904000" />
+      <workItem from="1540368598988" duration="9762000" />
+      <workItem from="1540456397088" duration="11073000" />
+      <workItem from="1540535944407" duration="17266000" />
+      <workItem from="1540800754017" duration="13530000" />
+      <workItem from="1540883735513" duration="15127000" />
+      <workItem from="1540968491605" duration="7610000" />
+      <workItem from="1541063726157" duration="9018000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="567769000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0796875" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5104167" side_tool="true" visible="true" weight="0.18968871" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32911393" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48958334" weight="0.18968871" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Inspection Results" order="10" visible="true" weight="0.32879376" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32879376" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/verify.php</url>
+          <line>52</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/verify.php</url>
+          <line>43</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="32" />
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>&lt;?php
+session_start();
+if(!empty($_SESSION['id'])) {
+        $id = trim($_SESSION['id']);
+        $msg =
+            &quot;Hello &quot; . $_SESSION['fname'] . &quot; welcome to your profile.&quot; . &quot;&lt;br&gt;&quot; . &quot;
+            &lt;p&gt; You can change your details here &lt;/p&gt;&quot;;
+        Try{
+            require &quot;config/conn.php&quot;;
+            $stmt = $con-&gt;prepare(&quot;SELECT * FROM users WHERE userid = $id&quot;);
+            $stmt-&gt;execute();
+
+            if ($stmt-&gt;rowCount()) {
+	            $row = $stmt-&gt;fetch();
+	            $print_pw = $row['password'];
+            } else
+	            echo &quot;&lt;script&gt; alert('this is session ID: $id')location.href'?#'&lt;/script&gt;&quot;;
+
+            if (isset($_POST['submit'])) {
+	            echo &quot;&lt;script&gt; alert('session ID: $id started')&lt;/script&gt;&quot;;
+	            $errorString = &quot;&quot;;
+
+	            $username = htmlentities(strip_tags(trim($_POST['uname'])));
+	            $username = htmlentities(strip_tags($username));
+	            if (empty($username)) {
+		            $errorString = $errorString . &quot;Please enter a username.&quot;;
+		            //remove any slashes that are automatically added
+		            $username = htmlentities(strip_tags($username));
+	            }
+
+	            $notif = $_POST['chkbox'];
+
+	            $firstname = htmlentities(strip_tags(trim($_POST['fname'])));
+	            if (empty($firstname)) {
+		            $errorString = $errorString . &quot;Please enter a first name.&quot;;
+		            $firstname = htmlentities(strip_tags($firstname));
+	            }
+
+	            $lastname = htmlentities(strip_tags(trim($_POST['lname'])));
+	            if (empty($lastname)) {
+		            $errorString = $errorString . &quot;Please enter a last name.&quot;;
+		            $lastname = htmlentities(strip_tags($lastname));
+	            }
+
+	            $password = trim($_POST['pass']);
+	            $pass_conf = trim($_POST['confirmpass']);
+	            if (!empty($password)) {
+		            if ($pass_conf === &quot;&quot;) {
+			            $errorString = &quot; passwords do not match, please confirm your password!&quot;;
+		            } else if ($password !== $pass_conf) {
+			            $errorString = &quot; passwords do not match, please confirm your password!&quot;;
+		            } else if (strlen($password) &lt; 6 || !preg_match('/^(?=.*\d)(?=.*[@#\-_$%^&amp;+=§!\?])(?=.*[a-z])(?=.*[A-Z])[0-9A-Za-z@#\-_$%^&amp;+=§!\?]{6,16}$/', $password)) {
+			            $errorString = &quot; Password does not meet minimum requirements&quot;;
+		            } else {
+			            $hash = MD5(rand(1, 1000));
+			            $password = serialize(hash('whirlpool', $pass_conf));
+		            }
+		            else
+		                $password = $print_pw;
+	            }
+
+	            $email = htmlentities(strip_tags(trim($_POST['email'])));
+	            if (!filter_var($email, FILTER_VALIDATE_EMAIL) || empty($email)) {
+		            $errorString = &quot; Please enter a valid email address !&quot;;
+	            }
+	            if (empty($email)) {
+		            $errorString = $errorString . &quot;Please enter email address &quot;;
+		            $email = htmlentities(strip_tags($email));
+	            }
+
+	            // check if there were any errors
+
+	            if (empty($errorString)) {//No errors, update the data
+                    if (strcmp($firstname, $row['firstname']) || strcmp($lastname, $row['lastname']) || strcmp($firstname, $row['firstname']) || strcmp($username, $row['username']) || strcmp($email, $row['email']) || strcmp($password, $print_pw) || $notif != $row['notif']) {
+	                    $query = $con-&gt;prepare(&quot;UPDATE users SET username = '$username', firstname = '$firstname', lastname = '$lastname', email = '$email', pword = '$password' , notif = '$notif' WHERE userid = $id&quot;)-&gt;execute();
+	                    if (!$query) {//if there was a problem - get the error message and go back
+		                    echo &quot;&lt;script&gt;alert('Error!! changes not made: '); location.href = 'profile.php'; &lt;/script&gt;&quot;;
+		                    exit;
+	                    }else
+	                    echo &quot;&lt;script&gt;alert('Congrats!! changes accepted'); location.href = 'profile.php'; &lt;/script&gt;&quot;;
+                    } else {
+                    echo &quot;&lt;script&gt;alert('Eish!! didn\'t get any changes, wanna try that again?'); location.href = 'profile.php'; &lt;/script&gt;&quot;;
+//			            header(&quot;Location: profile.php&quot;);
+		            }
+	            } else {//There were errors
+		            echo &quot;&lt;script&gt;alert('Oops!! looks like you\'ve made a tiny mistake: $errorString'); &lt;/script&gt;&quot;;
+	            }
+            }
+
+	?&gt;
+    &lt;!DOCTYPE html&gt;
+&lt;html class=&quot;page&quot;&gt;
+
+&lt;head&gt;
+	&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;width=device-width, initial scale=1; text/html; charset=utf-8&quot; /&gt;
+	&lt;title&gt;CAMAGRU : User Profile&lt;/title&gt;
+	&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; type=&quot;text/css&quot; /&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+	&lt;div class=&quot;row demo-wrapper&quot;&gt;
+		&lt;ul class=&quot;navbar&quot;&gt;
+			&lt;li&gt;&lt;a href=&quot;images/camera.php&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a class=&quot;active&quot; href=&quot;profile.php&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;images/Gallery.php&quot;&gt;Gallery&lt;/a&gt;&lt;/li&gt;
+			&lt;li style=&quot;float: right&quot;&gt;&lt;a href=&quot;logout.php&quot;&gt;LogOut&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;div class=&quot;main-container page__container&quot;&gt;
+			&lt;h2&gt;| CAMAGRU: Profile |&lt;/h2&gt;
+			&lt;hr/&gt;
+			&lt;br&gt;
+			&lt;?php echo $msg ?&gt;
+			&lt;br&gt;
+			&lt;form method=&quot;POST&quot; action=&quot;#&quot; enctype=&quot;multipart/form-data&quot;&gt;
+				&lt;table style=&quot;width:60%; margin:0&quot;&gt;
+					&lt;td&gt;
+						&lt;div class=&quot;page__section&quot;&gt;
+							&lt;label class=&quot;field field_type3&quot;&gt;
+                                &lt;input name=&quot;fname&quot; class=&quot;field__input&quot;
+                                       value=&quot;&lt;?php echo $row['firstname'] ?&gt;&quot;
+                                       placeholder=&quot;change your firstname&quot; /&gt;
+                                &lt;span class=&quot;field__label-wrap&quot;&gt;
+						            &lt;span class=&quot;field__label&quot;&gt;Enter your firstname&lt;/span&gt;
+                                &lt;/span&gt;
+                            &lt;/label&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;page__section&quot;&gt;
+							&lt;label class=&quot;field field_type3&quot;&gt;
+                                &lt;input name=&quot;lname&quot; class=&quot;field__input&quot;
+                                       value=&quot;&lt;?php echo $row['lastname'] ?&gt;&quot;
+                                       placeholder=&quot;change your lastname&quot; /&gt;
+                                &lt;span class=&quot;field__label-wrap&quot;&gt;
+						            &lt;span class=&quot;field__label&quot;&gt;Enter your lastname&lt;/span&gt;
+					            &lt;/span&gt;
+                            &lt;/label&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;page__section&quot;&gt;
+							&lt;label class=&quot;field field_type3&quot;&gt;
+                                &lt;input name=&quot;uname&quot; class=&quot;field__input&quot;
+                                       value=&quot;&lt;?php echo $row['username']; ?&gt;&quot;
+                                       placeholder=&quot;change username&quot; /&gt;
+                                &lt;span class=&quot;field__label-wrap&quot;&gt;
+						            &lt;span class=&quot;field__label&quot;&gt;Enter your username&lt;/span&gt;
+					            &lt;/span&gt;
+                            &lt;/label&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;page__section&quot;&gt;
+							&lt;label class=&quot;field field_type3&quot;&gt;
+                                &lt;input type=&quot;email&quot; name=&quot;email&quot;
+                                       class=&quot;field__input&quot;
+                                       value=&quot;&lt;?php echo $row['email']; ?&gt;&quot;
+                                       placeholder=&quot;Change your e-mail&quot;/&gt;
+                                &lt;span class=&quot;field__label-wrap&quot;&gt;
+						&lt;span class=&quot;field__label&quot;&gt;Enter your e-mail&lt;/span&gt;
+					&lt;/span&gt;
+                            &lt;/label&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;page__section&quot;&gt;
+							&lt;label class=&quot;field field_type3&quot;&gt;
+                            &lt;input name=&quot;pass&quot; type=&quot;password&quot; class=&quot;field__input&quot;
+                                   placeholder=&quot;New Password&quot; &gt;
+                            &lt;span class=&quot;field__label-wrap&quot;&gt;
+						&lt;span class=&quot;field__label&quot;&gt;Enter your password&lt;/span&gt;
+					&lt;/span&gt;
+                        &lt;/label&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;page__section&quot;&gt;
+							&lt;label class=&quot;field field_type3&quot;&gt;
+                            &lt;input name=&quot;confirmpass&quot; type=&quot;password&quot; class=&quot;field__input&quot;
+                                   placeholder=&quot;Tip: same as above&quot;&gt;
+                            &lt;span class=&quot;field__label-wrap&quot;&gt;
+						&lt;span class=&quot;field__label&quot;&gt;Confirm your password&lt;/span&gt;
+					&lt;/span&gt;
+                        &lt;/label&gt;
+							&lt;br&gt;
+							&lt;label class=&quot;field field_type3&quot;&gt; Enable e-mail notification
+                            &lt;input type=&quot;hidden&quot; name=&quot;chkbox&quot; value=&quot;1&quot; /&gt;
+                            &lt;input type=&quot;checkbox&quot; name=&quot;chkbox&quot; value=&quot;0&quot; &lt;?php if($row['notif'] == 0) echo &quot;checked&quot;; ?&gt; /&gt;&lt;/label&gt;
+							&lt;br&gt;
+							&lt;button type=&quot;submit&quot; name=&quot;submit&quot; class=&quot;button&quot; style=&quot;width: 50%; padding-top: 2%&quot; value=&quot;Submit&quot;&gt;Save
+                        &lt;/button&gt;&lt;button class=&quot;button&quot; style=&quot;width: 50%; padding-top: 2%; &quot; type=&quot;reset&quot; value=&quot;reset&quot;&gt;Clear
+                        &lt;/button&gt;
+						&lt;/div&gt;
+					&lt;/td&gt;
+				&lt;/table&gt;
+			&lt;/form&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+&lt;?PHP
+    }
+    catch (PDOException $e){
+            $e = $e-&gt;getMessage();
+    echo &quot;&lt;script&gt;alert('Oops!! looks like you\'ve managed to break something: $e '); &lt;/script&gt;&quot;;
+
+    }
+}
+else
+	echo &quot;&lt;script&gt;alert('Oops!! looks like you\'re not logged in! Please login'); location.href='login.php' &lt;/script&gt;&quot;;
+?&gt;</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&lt;?php
+    session_start();
+    ob_start();
+	require_once('../config/conn.php'); // include service classes to work with database and comments
+	if (!empty($_SESSION['id'])) {
+		$id = $_SESSION['id'];
+		$photos = $con-&gt;query(&quot;SELECT * FROM post_likes&quot;)-&gt;FetchAll();
+		$comments = $con-&gt;query(&quot;SELECT * FROM comments ORDER BY picname DESC&quot;)-&gt;FetchAll();
+
+		if ($_POST['like']) {
+			$image_id = $_POST['like'];
+			echo &quot;&lt;script&gt;location.href='Gallery.php?action=like&amp;id=$image_id'&lt;/script&gt;&quot;;
+		} elseif ($_POST['comment']) {
+			$image_id = $_POST['comment'];
+			echo &quot;&lt;script&gt;location.href='Gallery.php?action=comment&amp;id=$image_id&amp;message=$image_id'&lt;/script&gt;&quot;;
+		}
+	}
+?&gt;
+	&lt;!DOCTYPE HTML&gt;
+	&lt;html class=&quot;page&quot;&gt;
+
+	&lt;head&gt;
+		&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;width=device-width, initial scale=1; text/html; charset=utf-8&quot; /&gt;
+		&lt;title&gt;CAMAGRU : Gallery&lt;/title&gt;
+&lt;!--		&lt;link rel=&quot;stylesheet&quot; href=&quot;../style.css&quot; type=&quot;text/css&quot; /&gt;--&gt;
+&lt;!--		&lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js&quot;&gt;&lt;/script&gt;--&gt;
+	&lt;/head&gt;
+
+	&lt;body&gt;
+		&lt;ul class=&quot;&quot;&gt;
+			&lt;li&gt;&lt;a href=&quot;camera.php&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;../profile.php&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a class=&quot;active&quot; href=&quot;Gallery.php&quot;&gt;Gallery&lt;/a&gt;&lt;/li&gt;
+			&lt;li style=&quot;float: right&quot;&gt;&lt;a href=&quot;../logout.php&quot;&gt;LogOut&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+        &lt;div class=&quot;page__demo&quot;&gt;
+            &lt;h2&gt;| CAMAGRU: Gallery |&lt;/h2&gt;
+            &lt;div class=&quot;row page__container&quot;&gt;
+                &lt;div class=&quot;column middle&quot;&gt;
+                    &lt;div class=&quot;container_pic center&quot;&gt;
+                        &lt;table&gt;
+                            &lt;?php
+                            try {
+                            $aItems = $con-&gt;prepare('SELECT * FROM images ORDER BY picname DESC'); // get photos info
+                            $aItems-&gt;execute();
+                            $tot = $aItems-&gt;RowCount();
+                            $i = 0;
+                            $limit = 5;
+                            $total_pages = ceil($tot / $limit);
+                            $page = !isset($_GET['page']) ? 1 : $_GET['page'];
+                            $starting_limit = ($page - 1) * $limit;
+                            $aItems = $con-&gt;prepare(&quot;SELECT * FROM images ORDER BY picname DESC LIMIT $starting_limit, $limit&quot;); // get photos info
+                            $aItems-&gt;execute();
+                            while ($row = $aItems-&gt;fetch(PDO::FETCH_ASSOC)) {
+                                $image = $row['picname'];
+                                $imageid = $row['imageid'];
+                                $i++;
+
+                                //&lt;-- Comments section --&gt;?&gt;
+                                &lt;tr valign=&quot;middle !important&quot;&gt;
+                                    &lt;td valign=&quot;top&quot;&gt;&lt;img class=&quot;photo_wrp&quot; src=&quot;uploads/&lt;?php echo $image ?&gt;&quot;&gt;
+                                        &lt;form class=&quot;middle&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;
+                                            &lt;span&gt;
+                                                &lt;label class=&quot;field field_type3&quot;&gt;
+                                                    &lt;?php
+                                                    /* Retreive the number of likes */
+                                                    $total_post_likes = 0;
+                                                    foreach ($photos as $like) {
+                                                        if ($imageid == $like['image_id']) {
+                                                            $total_post_likes += $like['likesNo']; /* Accumulate likes */
+                                                        }
+                                                    }
+                                                    echo &quot;post_likes&quot;;
+                                                    echo &quot;: &quot;;
+                                                    echo &quot;&lt;b&gt;&quot; . $total_post_likes . &quot;&lt;/b&gt;&quot;;
+                                                    //echo &quot;&lt;/div&gt;&quot;;
+                                                    $total_post_likes = 0;
+                                                    ?&gt;
+                                                    &lt;textarea class=&quot;button field__input&quot;
+                                                              placeholder=&quot;Enter a comment&quot;
+                                                              style=&quot;padding-top: 2%;&quot;
+                                                              name=&quot;&lt;?php echo $imageid; ?&gt;&quot;
+                                                              id=&quot;message&quot;&gt;&lt;/textarea&gt;
+                                                    &lt;span class=&quot;field__label-wrap&quot;&gt;
+                                                &lt;/label&gt;
+                                                &lt;button name=&quot;like&quot; class=&quot;button&quot; style=&quot;width: 50%; padding-top: 2%&quot;
+                                                        value=&quot;&lt;?php echo $imageid; ?&gt;&quot; id=&quot;like&quot;&gt;Like&lt;/button&gt;&lt;button name=&quot;comment&quot;
+                                                                                                                       class=&quot;button&quot;
+                                                                                                                       style=&quot;width: 50%; padding-top: 2% &quot;
+                                                                                                                       value=&quot;&lt;?php echo $imageid; ?&gt;&quot;
+                                                                                                   onclick=&quot;submitComment()&quot;&gt;Comment&lt;/button&gt;
+                                                &lt;?php
+                                                foreach ($comments as $comment) {
+                                                    if ($imageid == $comment['image_id']) {
+                                                        echo &quot;&lt;span&gt;&lt;br /&gt;&quot; . $comment['user'] . &quot;&lt;b&gt;&lt;/span&gt; &lt;b /&gt; : &lt;b /&gt; &lt;span&gt;&quot; . $comment['comment'] . &quot;&lt;b /&gt;&lt;/span&gt;&quot;;
+                                                    }
+                                                } ?&gt;
+											&lt;/span&gt;
+                                        &lt;/form&gt;
+                                    &lt;/td&gt;
+
+                                &lt;/tr&gt;
+                                &lt;?php
+                            }
+                            ?&gt;
+                        &lt;/table&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;br&gt;
+        &lt;div class=&quot;footer center&quot;&gt;
+            &lt;!--        &lt;div id=&quot;overlay&quot;&gt;&lt;div&gt;&lt;img src=&quot;loading.gif&quot; width=&quot;60%&quot; height=&quot;64px&quot;/&gt;&lt;/div&gt;&lt;/div&gt;--&gt;
+            &lt;div class=&quot;pagination&quot;&gt;
+                &lt;a href=&quot;&lt;?php echo &quot; ?page=1 &quot;; ?&gt;&quot;&gt;&amp;laquo;&lt;/a&gt;
+                &lt;?php for ($page = 1; $page &lt;= $total_pages; $page++): ?&gt;
+                    &lt;a class=&quot;test&quot; href='&lt;?php echo &quot;?page=$page&quot;; ?&gt;'&gt;
+                        &lt;?php echo $page; ?&gt;
+                    &lt;/a&gt;
+
+                &lt;?php endfor; ?&gt;
+                &lt;a href=&quot;&lt;?php echo &quot; ?page=$total_pages &quot;; ?&gt;&quot;&gt;&amp;raquo;&lt;/a&gt;
+                &lt;?php
+                } catch (PDOException $e) {
+                    $e = $e-&gt;getTraceAsString();
+                    echo &quot;&lt;script&gt;alert('ERROR : $e'); location.href='Gallery.php'; &lt;/script&gt;&quot;;
+                }
+                ?&gt;
+
+            &lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;script src=&quot;comment_.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+	&lt;/body&gt;
+
+	&lt;/html&gt;</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&lt;?php
+    session_start();
+    ob_start();
+	require_once('../config/conn.php'); // include service classes to work with database and comments
+	if (!empty($_SESSION['id'])) {
+		$id = $_SESSION['id'];
+		$photos = $con-&gt;query(&quot;SELECT * FROM post_likes&quot;)-&gt;FetchAll();
+		$comments = $con-&gt;query(&quot;SELECT * FROM comments ORDER BY picname DESC&quot;)-&gt;FetchAll();
+
+		if ($_POST['like']) {
+			$image_id = $_POST['like'];
+			echo &quot;&lt;script&gt;location.href='comments.php?action=like&amp;id=$image_id'&lt;/script&gt;&quot;;
+		} elseif ($_POST['comment']) {
+			$image_id = $_POST['comment'];
+			echo &quot;&lt;script&gt;location.href='comments.php?action=comment&amp;id=$image_id&amp;message=$image_id'&lt;/script&gt;&quot;;
+		}
+	}
+?&gt;
+	&lt;!DOCTYPE HTML&gt;
+	&lt;html class=&quot;page&quot;&gt;
+
+	&lt;head&gt;
+		&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;width=device-width, initial scale=1; text/html; charset=utf-8&quot; /&gt;
+		&lt;title&gt;CAMAGRU : Gallery&lt;/title&gt;
+&lt;!--		&lt;link rel=&quot;stylesheet&quot; href=&quot;../style.css&quot; type=&quot;text/css&quot; /&gt;--&gt;
+&lt;!--		&lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js&quot;&gt;&lt;/script&gt;--&gt;
+	&lt;/head&gt;
+
+	&lt;body&gt;
+		&lt;ul class=&quot;&quot;&gt;
+			&lt;li&gt;&lt;a href=&quot;camera.php&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;../profile.php&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a class=&quot;active&quot; href=&quot;Gallery.php&quot;&gt;Gallery&lt;/a&gt;&lt;/li&gt;
+			&lt;li style=&quot;float: right&quot;&gt;&lt;a href=&quot;../logout.php&quot;&gt;LogOut&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+        &lt;div class=&quot;page__demo&quot;&gt;
+            &lt;h2&gt;| CAMAGRU: Gallery |&lt;/h2&gt;
+            &lt;div class=&quot;row page__container&quot;&gt;
+                &lt;div class=&quot;column middle&quot;&gt;
+                    &lt;div class=&quot;container_pic center&quot;&gt;
+                        &lt;table&gt;
+                            &lt;?php
+                            try {
+                            $aItems = $con-&gt;prepare('SELECT * FROM images ORDER BY picname DESC'); // get photos info
+                            $aItems-&gt;execute();
+                            $tot = $aItems-&gt;RowCount();
+                            $i = 0;
+                            $limit = 5;
+                            $total_pages = ceil($tot / $limit);
+                            $page = !isset($_GET['page']) ? 1 : $_GET['page'];
+                            $starting_limit = ($page - 1) * $limit;
+                            $aItems = $con-&gt;prepare(&quot;SELECT * FROM images ORDER BY picname DESC LIMIT $starting_limit, $limit&quot;); // get photos info
+                            $aItems-&gt;execute();
+                            while ($row = $aItems-&gt;fetch(PDO::FETCH_ASSOC)) {
+                                $image = $row['picname'];
+                                $imageid = $row['imageid'];
+                                $i++;
+                                //&lt;-- Comments section --&gt;
+                                ?&gt;
+                                &lt;tr valign=&quot;middle !important&quot;&gt;
+                                    &lt;td valign=&quot;top&quot;&gt;&lt;img class=&quot;photo_wrp&quot; src=&quot;uploads/&lt;?php echo $image ?&gt;&quot;&gt;
+                                        &lt;form class=&quot;middle&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;
+                                            &lt;span&gt;
+                                                &lt;label class=&quot;field field_type3&quot;&gt;
+                                                    &lt;?php
+                                                    /* Retreive the number of likes */
+                                                    $total_post_likes = 0;
+                                                    foreach ($photos as $like) {
+                                                        if ($imageid == $like['image_id']) {
+                                                            $total_post_likes += $like['likesNo']; /* Accumulate likes */
+                                                        }
+                                                    }
+                                                    echo &quot;post_likes&quot;;
+                                                    echo &quot;: &quot;;
+                                                    echo &quot;&lt;b&gt;&quot; . $total_post_likes . &quot;&lt;/b&gt;&quot;;
+                                                    //echo &quot;&lt;/div&gt;&quot;;
+                                                    $total_post_likes = 0;
+                                                    ?&gt;
+                                                    &lt;textarea class=&quot;button field__input&quot;
+                                                              placeholder=&quot;Enter a comment&quot;
+                                                              style=&quot;padding-top: 2%;&quot;
+                                                              name=&quot;&lt;?php echo $imageid; ?&gt;&quot;
+                                                              id=&quot;message&quot;&gt;&lt;/textarea&gt;
+                                                    &lt;span class=&quot;field__label-wrap&quot;&gt;
+                                                &lt;/label&gt;
+                                                &lt;button name=&quot;like&quot; class=&quot;button&quot; style=&quot;width: 50%; padding-top: 2%&quot;
+                                                        value=&quot;&lt;?php echo $imageid; ?&gt;&quot;
+                                                        id=&quot;like&quot;&gt;Like&lt;/button&gt;&lt;button name=&quot;comment&quot;
+                                                                                       class=&quot;button&quot;
+                                                                                       style=&quot;width: 50%; padding-top: 2% &quot;
+                                                                                       value=&quot;&lt;?php echo $imageid; ?&gt;&quot;
+                                                                                       onclick=&quot;submitComment()&quot;&gt;Comment&lt;/button&gt;
+                                                &lt;?php
+                                                foreach ($comments as $comment) {
+                                                    if ($imageid == $comment['image_id']) {
+                                                        echo &quot;&lt;span&gt;&lt;br /&gt;&quot; . $comment['user'] . &quot;&lt;b&gt;&lt;/span&gt; &lt;b /&gt; : &lt;b /&gt; &lt;span&gt;&quot; . $comment['comment'] . &quot;&lt;b /&gt;&lt;/span&gt;&quot;;
+                                                    }
+                                                }
+                                                ?&gt;
+											&lt;/span&gt;
+                                        &lt;/form&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;?php
+                            }
+                            ?&gt;
+                        &lt;/table&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;br&gt;
+        &lt;div class=&quot;footer center&quot;&gt;
+            &lt;!--        &lt;div id=&quot;overlay&quot;&gt;&lt;div&gt;&lt;img src=&quot;loading.gif&quot; width=&quot;60%&quot; height=&quot;64px&quot;/&gt;&lt;/div&gt;&lt;/div&gt;--&gt;
+            &lt;div class=&quot;pagination&quot;&gt;
+                &lt;a href=&quot;&lt;?php echo &quot; ?page=1 &quot;; ?&gt;&quot;&gt;&amp;laquo;&lt;/a&gt;
+                &lt;?php for ($page = 1; $page &lt;= $total_pages; $page++): ?&gt;
+                    &lt;a class=&quot;test&quot; href='&lt;?php echo &quot;?page=$page&quot;; ?&gt;'&gt;
+                        &lt;?php echo $page; ?&gt;
+                    &lt;/a&gt;
+                &lt;?php endfor; ?&gt;
+                &lt;a href=&quot;&lt;?php echo &quot; ?page=$total_pages &quot;; ?&gt;&quot;&gt;&amp;raquo;&lt;/a&gt;
+                &lt;?php
+                            } catch (PDOException $e) {
+                                $e = $e-&gt;getTraceAsString();
+                                echo &quot;&lt;script&gt;alert('ERROR : $e'); location.href='Gallery.php'; &lt;/script&gt;&quot;;
+                            }
+                            ?&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;script src=&quot;comment_.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+	&lt;/html&gt;</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&lt;?php
+    session_start();
+    ob_start();
+	require_once('../config/conn.php'); // include service classes to work with database and comments
+	if (!empty($_SESSION['id'])) {
+		$id = $_SESSION['id'];
+		$photos = $con-&gt;query(&quot;SELECT * FROM post_likes&quot;)-&gt;FetchAll();
+		$comments = $con-&gt;query(&quot;SELECT * FROM comments ORDER BY picname DESC&quot;)-&gt;FetchAll();
+
+		if ($_POST['like']) {
+			$image_id = $_POST['like'];
+			echo &quot;&lt;script&gt;location.href='comments.php?action=like&amp;id=$image_id'&lt;/script&gt;&quot;;
+		} elseif ($_POST['comment']) {
+			$image_id = $_POST['comment'];
+			echo &quot;&lt;script&gt;location.href='comments.php?action=comment&amp;id=$image_id&amp;message=$image_id'&lt;/script&gt;&quot;;
+		}
+	}
+?&gt;
+	&lt;!DOCTYPE HTML&gt;
+	&lt;html class=&quot;page&quot;&gt;
+
+	&lt;head&gt;
+		&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;width=device-width, initial scale=1; text/html; charset=utf-8&quot; /&gt;
+		&lt;title&gt;CAMAGRU : Gallery&lt;/title&gt;
+&lt;!--		&lt;link rel=&quot;stylesheet&quot; href=&quot;../style.css&quot; type=&quot;text/css&quot; /&gt;--&gt;
+&lt;!--		&lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js&quot;&gt;&lt;/script&gt;--&gt;
+	&lt;/head&gt;
+
+	&lt;body&gt;
+		&lt;ul class=&quot;&quot;&gt;
+			&lt;li&gt;&lt;a href=&quot;camera.php&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;../profile.php&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a class=&quot;active&quot; href=&quot;Gallery.php&quot;&gt;Gallery&lt;/a&gt;&lt;/li&gt;
+			&lt;li style=&quot;float: right&quot;&gt;&lt;a href=&quot;../logout.php&quot;&gt;LogOut&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+        &lt;div class=&quot;page__demo&quot;&gt;
+            &lt;h2&gt;| CAMAGRU: Gallery |&lt;/h2&gt;
+            &lt;div class=&quot;row page__container&quot;&gt;
+                &lt;div class=&quot;column middle&quot;&gt;
+                    &lt;div class=&quot;container_pic center&quot;&gt;
+                        &lt;table&gt;
+                            &lt;?php
+                            try {
+                            $aItems = $con-&gt;prepare('SELECT * FROM images ORDER BY picname DESC'); // get photos info
+                            $aItems-&gt;execute();
+                            $tot = $aItems-&gt;RowCount();
+                            $i = 0;
+                            $limit = 5;
+                            $total_pages = ceil($tot / $limit);
+                            $page = !isset($_GET['page']) ? 1 : $_GET['page'];
+                            $starting_limit = ($page - 1) * $limit;
+                            $aItems = $con-&gt;prepare(&quot;SELECT * FROM images ORDER BY picname DESC LIMIT $starting_limit, $limit&quot;); // get photos info
+                            $aItems-&gt;execute();
+                            while ($row = $aItems-&gt;fetch(PDO::FETCH_ASSOC)) {
+                                $image = $row['picname'];
+                                $imageid = $row['imageid'];
+                                $i++;
+                                //&lt;-- Comments section --&gt;
+                                ?&gt;
+                                &lt;tr valign=&quot;middle !important&quot;&gt;
+                                    &lt;td valign=&quot;top&quot;&gt;&lt;img class=&quot;photo_wrp&quot; src=&quot;uploads/&lt;?php echo $image ?&gt;&quot;&gt;
+                                        &lt;form class=&quot;middle&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;
+                                            &lt;span&gt;
+                                                &lt;label class=&quot;field field_type3&quot;&gt;
+                                                    &lt;?php
+                                                    /* Retreive the number of likes */
+                                                    $total_post_likes = 0;
+                                                    foreach ($photos as $like) {
+                                                        if ($imageid == $like['image_id']) {
+                                                            $total_post_likes += $like['likesNo']; /* Accumulate likes */
+                                                        }
+                                                    }
+                                                    echo &quot;post_likes&quot;;
+                                                    echo &quot;: &quot;;
+                                                    echo &quot;&lt;b&gt;&quot; . $total_post_likes . &quot;&lt;/b&gt;&quot;;
+                                                    //echo &quot;&lt;/div&gt;&quot;;
+                                                    $total_post_likes = 0;
+                                                    ?&gt;szama@student.42.fr
+                                                    &lt;textarea class=&quot;button field__input&quot;
+                                                              placeholder=&quot;Enter a comment&quot;
+                                                              style=&quot;padding-top: 2%;&quot;
+                                                              name=&quot;&lt;?php echo $imageid; ?&gt;&quot;
+                                                              id=&quot;message&quot;&gt;&lt;/textarea&gt;
+                                                    &lt;span class=&quot;field__label-wrap&quot;&gt;
+                                                &lt;/label&gt;
+                                                &lt;button name=&quot;like&quot; class=&quot;button&quot; style=&quot;width: 50%; padding-top: 2%&quot;
+                                                        value=&quot;&lt;?php echo $imageid; ?&gt;&quot;
+                                                        id=&quot;like&quot;&gt;Like&lt;/button&gt;&lt;button name=&quot;comment&quot;
+                                                                                       class=&quot;button&quot;
+                                                                                       style=&quot;width: 50%; padding-top: 2% &quot;
+                                                                                       value=&quot;&lt;?php echo $imageid; ?&gt;&quot;
+                                                                                       onclick=&quot;submitComment()&quot;&gt;Comment&lt;/button&gt;
+                                                &lt;?php
+                                                foreach ($comments as $comment) {
+                                                    if ($imageid == $comment['image_id']) {
+                                                        echo &quot;&lt;span&gt;&lt;br /&gt;&quot; . $comment['user'] . &quot;&lt;b&gt;&lt;/span&gt; &lt;b /&gt; : &lt;b /&gt; &lt;span&gt;&quot; . $comment['comment'] . &quot;&lt;b /&gt;&lt;/span&gt;&quot;;
+                                                    }
+                                                }
+                                                ?&gt;
+											&lt;/span&gt;
+                                        &lt;/form&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;?php
+                            }
+                            ?&gt;
+                        &lt;/table&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;br&gt;
+        &lt;div class=&quot;footer center&quot;&gt;
+            &lt;!--        &lt;div id=&quot;overlay&quot;&gt;&lt;div&gt;&lt;img src=&quot;loading.gif&quot; width=&quot;60%&quot; height=&quot;64px&quot;/&gt;&lt;/div&gt;&lt;/div&gt;--&gt;
+            &lt;div class=&quot;pagination&quot;&gt;
+                &lt;a href=&quot;&lt;?php echo &quot; ?page=1 &quot;; ?&gt;&quot;&gt;&amp;laquo;&lt;/a&gt;
+                &lt;?php for ($page = 1; $page &lt;= $total_pages; $page++): ?&gt;
+                    &lt;a class=&quot;test&quot; href='&lt;?php echo &quot;?page=$page&quot;; ?&gt;'&gt;
+                        &lt;?php echo $page; ?&gt;
+                    &lt;/a&gt;
+                &lt;?php endfor; ?&gt;
+                &lt;a href=&quot;&lt;?php echo &quot; ?page=$total_pages &quot;; ?&gt;&quot;&gt;&amp;raquo;&lt;/a&gt;
+                &lt;?php
+                            } catch (PDOException $e) {
+                                $e = $e-&gt;getTraceAsString();
+                                echo &quot;&lt;script&gt;alert('ERROR : $e'); location.href='Gallery.php' &lt;/script&gt;&quot;;
+                            }
+                            ?&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;script src=&quot;comment_.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+	&lt;/html&gt;</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&lt;?php
+    session_start();
+    ob_start();
+	require_once('../config/conn.php'); // include service classes to work with database and comments
+	if (!empty($_SESSION['id'])) {
+		$id = $_SESSION['id'];
+		$photos = $con-&gt;query(&quot;SELECT * FROM post_likes&quot;)-&gt;FetchAll();
+		$comments = $con-&gt;query(&quot;SELECT * FROM comments ORDER BY picname DESC&quot;)-&gt;FetchAll();
+
+		if ($_POST['like']) {
+			$image_id = $_POST['like'];
+			echo &quot;&lt;script&gt;location.href='comments.php?action=like&amp;id=$image_id'&lt;/script&gt;&quot;;
+		} elseif ($_POST['comment']) {
+			$image_id = $_POST['comment'];
+			echo &quot;&lt;script&gt;location.href='comments.php?action=comment&amp;id=$image_id&amp;message=$image_id'&lt;/script&gt;&quot;;
+		}
+	}
+?&gt;
+	&lt;!DOCTYPE HTML&gt;
+	&lt;html class=&quot;page&quot;&gt;
+
+	&lt;head&gt;
+		&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;width=device-width, initial scale=1; text/html; charset=utf-8&quot; /&gt;
+		&lt;title&gt;CAMAGRU : Gallery&lt;/title&gt;
+&lt;!--		&lt;link rel=&quot;stylesheet&quot; href=&quot;../style.css&quot; type=&quot;text/css&quot; /&gt;--&gt;
+&lt;!--		&lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js&quot;&gt;&lt;/script&gt;--&gt;
+	&lt;/head&gt;
+
+	&lt;body&gt;
+		&lt;ul class=&quot;&quot;&gt;
+			&lt;li&gt;&lt;a href=&quot;camera.php&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;../profile.php&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a class=&quot;active&quot; href=&quot;Gallery.php&quot;&gt;Gallery&lt;/a&gt;&lt;/li&gt;
+			&lt;li style=&quot;float: right&quot;&gt;&lt;a href=&quot;../logout.php&quot;&gt;LogOut&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+        &lt;div class=&quot;page__demo&quot;&gt;
+            &lt;h2&gt;| CAMAGRU: Gallery |&lt;/h2&gt;
+            &lt;div class=&quot;row page__container&quot;&gt;
+                &lt;div class=&quot;column middle&quot;&gt;
+                    &lt;div class=&quot;container_pic center&quot;&gt;
+                        &lt;table&gt;
+                            &lt;?php
+                            try {
+                            $aItems = $con-&gt;prepare('SELECT * FROM images ORDER BY picname DESC'); // get photos info
+                            $aItems-&gt;execute();
+                            $tot = $aItems-&gt;RowCount();
+                            $i = 0;
+                            $limit = 5;
+                            $total_pages = ceil($tot / $limit);
+                            $page = !isset($_GET['page']) ? 1 : $_GET['page'];
+                            $starting_limit = ($page - 1) * $limit;
+                            $aItems = $con-&gt;prepare(&quot;SELECT * FROM images ORDER BY picname DESC LIMIT $starting_limit, $limit&quot;); // get photos info
+                            $aItems-&gt;execute();
+                            while ($row = $aItems-&gt;fetch(PDO::FETCH_ASSOC)) {
+                                $image = $row['picname'];
+                                $imageid = $row['imageid'];
+                                $i++;
+                                //&lt;-- Comments section --&gt;
+                                ?&gt;
+                                &lt;tr valign=&quot;middle !important&quot;&gt;
+                                    &lt;td valign=&quot;top&quot;&gt;&lt;img class=&quot;photo_wrp&quot; src=&quot;uploads/&lt;?php echo $image ?&gt;&quot;&gt;
+                                        &lt;form class=&quot;middle&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;
+                                            &lt;span&gt;
+                                                &lt;label class=&quot;field field_type3&quot;&gt;
+                                                    &lt;?php
+                                                    /* Retreive the number of likes */
+                                                    $total_post_likes = 0;
+                                                    foreach ($photos as $like) {
+                                                        if ($imageid == $like['image_id']) {
+                                                            $total_post_likes += $like['likesNo']; /* Accumulate likes */
+                                                        }
+                                                    }
+                                                    echo &quot;post_likes&quot;;
+                                                    echo &quot;: &quot;;
+                                                    echo &quot;&lt;b&gt;&quot; . $total_post_likes . &quot;&lt;/b&gt;&quot;;
+                                                    //echo &quot;&lt;/div&gt;&quot;;
+                                                    $total_post_likes = 0;
+                                                    ?&gt;szama@student.42.fr
+                                                    &lt;textarea class=&quot;button field__input&quot;
+                                                              placeholder=&quot;Enter a comment&quot;
+                                                              style=&quot;padding-top: 2%;&quot;
+                                                              name=&quot;&lt;?php echo $imageid; ?&gt;&quot;
+                                                              id=&quot;message&quot;&gt;&lt;/textarea&gt;
+                                                    &lt;span class=&quot;field__label-wrap&quot;&gt;
+                                                &lt;/label&gt;
+                                                &lt;button name=&quot;like&quot; class=&quot;button&quot; style=&quot;width: 50%; padding-top: 2%&quot;
+                                                        value=&quot;&lt;?php echo $imageid; ?&gt;&quot;
+                                                        id=&quot;like&quot;&gt;Like&lt;/button&gt;&lt;button name=&quot;comment&quot;
+                                                                                       class=&quot;button&quot;
+                                                                                       style=&quot;width: 50%; padding-top: 2% &quot;
+                                                                                       value=&quot;&lt;?php echo $imageid; ?&gt;&quot;
+                                                                                       onclick=&quot;submitComment()&quot;&gt;Comment&lt;/button&gt;
+                                                &lt;?php
+                                                foreach ($comments as $comment) {
+                                                    if ($imageid == $comment['image_id']) {
+                                                        echo &quot;&lt;span&gt;&lt;br /&gt;&quot; . $comment['user'] . &quot;&lt;b&gt;&lt;/span&gt; &lt;b /&gt; : &lt;b /&gt; &lt;span&gt;&quot; . $comment['comment'] . &quot;&lt;b /&gt;&lt;/span&gt;&quot;;
+                                                    }
+                                                }
+                                                ?&gt;
+											&lt;/span&gt;
+                                        &lt;/form&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;?php
+                            }
+                            ?&gt;
+                        &lt;/table&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;br&gt;
+        &lt;div class=&quot;footer center&quot;&gt;
+            &lt;!--        &lt;div id=&quot;overlay&quot;&gt;&lt;div&gt;&lt;img src=&quot;loading.gif&quot; width=&quot;60%&quot; height=&quot;64px&quot;/&gt;&lt;/div&gt;&lt;/div&gt;--&gt;
+            &lt;div class=&quot;pagination&quot;&gt;
+                &lt;a href=&quot;&lt;?php echo &quot; ?page=1 &quot;; ?&gt;&quot;&gt;&amp;laquo;&lt;/a&gt;
+                &lt;?php for ($page = 1; $page &lt;= $total_pages; $page++): ?&gt;
+                    &lt;a class=&quot;test&quot; href='&lt;?php echo &quot;?page=$page&quot;; ?&gt;'
+                        &lt;?php echo $page; ?&gt;
+                    &lt;/a&gt;
+                &lt;?php endfor; ?&gt;
+                &lt;a href=&quot;&lt;?php echo &quot; ?page=$total_pages &quot;; ?&gt;&quot;&gt;&amp;raquo;&lt;/a&gt;
+                &lt;?php
+                            } catch (PDOException $e) {
+                                $e = $e-&gt;getTraceAsString();
+                                echo &quot;&lt;script&gt;alert('ERROR : $e'); location.href='Gallery.php' &lt;/script&gt;&quot;;
+                            }
+                            ?&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;script src=&quot;comment_.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+	&lt;/html&gt;</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&lt;?php
+    session_start();
+    ob_start();
+	require_once('../config/conn.php'); // include service classes to work with database and comments
+	if (!empty($_SESSION['id'])) {
+		$id = $_SESSION['id'];
+		$photos = $con-&gt;query(&quot;SELECT * FROM post_likes&quot;)-&gt;FetchAll();
+		$comments = $con-&gt;query(&quot;SELECT * FROM comments ORDER BY picname DESC&quot;)-&gt;FetchAll();
+
+		if ($_POST['like']) {
+			$image_id = $_POST['like'];
+			echo &quot;&lt;script&gt;location.href='comments.php?action=like&amp;id=$image_id'&lt;/script&gt;&quot;;
+		} elseif ($_POST['comment']) {
+			$image_id = $_POST['comment'];
+			echo &quot;&lt;script&gt;location.href='comments.php?action=comment&amp;id=$image_id&amp;message=$image_id'&lt;/script&gt;&quot;;
+		}
+	}
+?&gt;
+	&lt;!DOCTYPE HTML&gt;
+	&lt;html class=&quot;page&quot;&gt;
+
+	&lt;head&gt;
+		&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;width=device-width, initial scale=1; text/html; charset=utf-8&quot; /&gt;
+		&lt;title&gt;CAMAGRU : Gallery&lt;/title&gt;
+&lt;!--		&lt;link rel=&quot;stylesheet&quot; href=&quot;../style.css&quot; type=&quot;text/css&quot; /&gt;--&gt;
+&lt;!--		&lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js&quot;&gt;&lt;/script&gt;--&gt;
+	&lt;/head&gt;
+
+	&lt;body&gt;
+		&lt;ul class=&quot;&quot;&gt;
+			&lt;li&gt;&lt;a href=&quot;camera.php&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;../profile.php&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a class=&quot;active&quot; href=&quot;Gallery.php&quot;&gt;Gallery&lt;/a&gt;&lt;/li&gt;
+			&lt;li style=&quot;float: right&quot;&gt;&lt;a href=&quot;../logout.php&quot;&gt;LogOut&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+        &lt;div class=&quot;page__demo&quot;&gt;
+            &lt;h2&gt;| CAMAGRU: Gallery |&lt;/h2&gt;
+            &lt;div class=&quot;row page__container&quot;&gt;
+                &lt;div class=&quot;column middle&quot;&gt;
+                    &lt;div class=&quot;container_pic center&quot;&gt;
+                        &lt;table&gt;
+                            &lt;?php
+                            try {
+                            $aItems = $con-&gt;prepare('SELECT * FROM images ORDER BY picname DESC'); // get photos info
+                            $aItems-&gt;execute();
+                            $tot = $aItems-&gt;RowCount();
+                            $i = 0;
+                            $limit = 5;
+                            $total_pages = ceil($tot / $limit);
+                            $page = !isset($_GET['page']) ? 1 : $_GET['page'];
+                            $starting_limit = ($page - 1) * $limit;
+                            $aItems = $con-&gt;prepare(&quot;SELECT * FROM images ORDER BY picname DESC LIMIT $starting_limit, $limit&quot;); // get photos info
+                            $aItems-&gt;execute();
+                            while ($row = $aItems-&gt;fetch(PDO::FETCH_ASSOC)) {
+                                $image = $row['picname'];
+                                $imageid = $row['imageid'];
+                                $i++;
+                                //&lt;-- Comments section --&gt;
+                                ?&gt;
+                                &lt;tr valign=&quot;middle !important&quot;&gt;
+                                    &lt;td valign=&quot;top&quot;&gt;&lt;img class=&quot;photo_wrp&quot; src=&quot;uploads/&lt;?php echo $image ?&gt;&quot;&gt;
+                                        &lt;form class=&quot;middle&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;
+                                            &lt;span&gt;
+                                                &lt;label class=&quot;field field_type3&quot;&gt;
+                                                    &lt;?php
+                                                    /* Retreive the number of likes */
+                                                    $total_post_likes = 0;
+                                                    foreach ($photos as $like) {
+                                                        if ($imageid == $like['image_id']) {
+                                                            $total_post_likes += $like['likesNo']; /* Accumulate likes */
+                                                        }
+                                                    }
+                                                    echo &quot;post_likes&quot;;
+                                                    echo &quot;: &quot;;
+                                                    echo &quot;&lt;b&gt;&quot; . $total_post_likes . &quot;&lt;/b&gt;&quot;;
+                                                    //echo &quot;&lt;/div&gt;&quot;;
+                                                    $total_post_likes = 0;
+                                                    ?&gt;szama@student.42.fr
+                                                    &lt;textarea class=&quot;button field__input&quot;
+                                                              placeholder=&quot;Enter a comment&quot;
+                                                              style=&quot;padding-top: 2%;&quot;
+                                                              name=&quot;&lt;?php echo $imageid; ?&gt;&quot;
+                                                              id=&quot;message&quot;&gt;&lt;/textarea&gt;
+                                                    &lt;span class=&quot;field__label-wrap&quot;&gt;
+                                                &lt;/label&gt;
+                                                &lt;button name=&quot;like&quot; class=&quot;button&quot; style=&quot;width: 50%; padding-top: 2%&quot;
+                                                        value=&quot;&lt;?php echo $imageid; ?&gt;&quot;
+                                                        id=&quot;like&quot;&gt;Like&lt;/button&gt;&lt;button name=&quot;comment&quot;
+                                                                                       class=&quot;button&quot;
+                                                                                       style=&quot;width: 50%; padding-top: 2% &quot;
+                                                                                       value=&quot;&lt;?php echo $imageid; ?&gt;&quot;
+                                                                                       onclick=&quot;submitComment()&quot;&gt;Comment&lt;/button&gt;
+                                                &lt;?php
+                                                foreach ($comments as $comment) {
+                                                    if ($imageid == $comment['image_id']) {
+                                                        echo &quot;&lt;span&gt;&lt;br /&gt;&quot; . $comment['user'] . &quot;&lt;b&gt;&lt;/span&gt; &lt;b /&gt; : &lt;b /&gt; &lt;span&gt;&quot; . $comment['comment'] . &quot;&lt;b /&gt;&lt;/span&gt;&quot;;
+                                                    }
+                                                }
+                                                ?&gt;
+											&lt;/span&gt;
+                                        &lt;/form&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;?php
+                            }
+                            ?&gt;
+                        &lt;/table&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;br&gt;
+        &lt;div class=&quot;footer center&quot;&gt;
+            &lt;!--        &lt;div id=&quot;overlay&quot;&gt;&lt;div&gt;&lt;img src=&quot;loading.gif&quot; width=&quot;60%&quot; height=&quot;64px&quot;/&gt;&lt;/div&gt;&lt;/div&gt;--&gt;
+            &lt;div class=&quot;pagination&quot;&gt;
+                &lt;a href=&quot;&lt;?php echo &quot; ?page=1 &quot;; ?&gt;&quot;&gt;&amp;laquo;&lt;/a&gt;
+                &lt;?php for ($page = 1; $page &lt;= $total_pages; $page++): ?&gt;
+                    &lt;a class=&quot;test&quot; href='&lt;?php echo &quot;?page=$page&quot;; ?&gt;'&gt;
+                        &lt;?php echo $page; ?&gt;
+                    &lt;/a&gt;
+                &lt;?php endfor; ?&gt;
+                &lt;a href=&quot;&lt;?php echo &quot; ?page=$total_pages &quot;; ?&gt;&quot;&gt;&amp;raquo;&lt;/a&gt;
+                &lt;?php
+                            } catch (PDOException $e) {
+                                $e = $e-&gt;getTraceAsString();
+                                echo &quot;&lt;script&gt;alert('ERROR : $e'); location.href='Gallery.php'; &lt;/script&gt;&quot;;
+                            }
+                            ?&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;script src=&quot;comment_.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+	&lt;/html&gt;</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>$sql = &quot;CREATE TABLE IF NOT EXISTS images (
+		imageid INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+		picname VARCHAR(30),
+		piclocation VARCHAR(50) NOT NULL,
+		mod_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+		)&quot;;
+    $conn-&gt;exec($sql);</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>context.drawImage(video, 0, 0, 640, 480);</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>$conn = null;</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../Camagruv/class.user.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_camera-20180318T113646Z-001.zip/camera/camera/delete.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_camera-20180318T113646Z-001.zip/camera/camera/functions.php" />
+    <entry file="file://$USER_HOME$/Documents/Camagruv/mailer/class.smtp.php" />
+    <entry file="file://$USER_HOME$/Documents/Camagruv/verify.php" />
+    <entry file="file://$USER_HOME$/Documents/Camagruv/home.php" />
+    <entry file="file://$USER_HOME$/Documents/Camagruv/signup.php" />
+    <entry file="file://$USER_HOME$/Documents/Camagruv/class.user.php" />
+    <entry file="file://$PROJECT_DIR$/../../../php/php.ini" />
+    <entry file="file://$USER_HOME$/Documents/Camagruv/assets/scripts.js" />
+    <entry file="file://$USER_HOME$/Documents/Camagruv/assets/styles.css" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_7.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2028">
+          <caret line="1025" column="9" selection-start-line="1025" selection-start-column="9" selection-end-line="1025" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Camagruv/mailer/class.phpmailer.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_boom-master.zip/boom-master/camera/camera.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_boom-master.zip/boom-master/cam.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_boom-master.zip/boom-master/home.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_boom-master.zip/boom-master/index.php" />
+    <entry file="file://$PROJECT_DIR$/src/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/uploads/img1523814374.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../camera/camera/functions.php" />
+    <entry file="file://$PROJECT_DIR$/../camera/htmls/loggedin.php" />
+    <entry file="file://$PROJECT_DIR$/../camera/css/styles.css" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/PDO/PDO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="896" selection-start-line="896" selection-end-line="897" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js">
+      <provider selected="true" editor-type-id="httpFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/style.css" />
+    <entry file="file://$PROJECT_DIR$/images/upload_.js" />
+    <entry file="file://$PROJECT_DIR$/images/uploads/img1521396903.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/verify.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="64" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resetpass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="921">
+          <caret line="108" column="10" selection-start-line="108" selection-start-column="10" selection-end-line="108" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/conn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/upload.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+      <provider selected="true" editor-type-id="httpFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/getmore.php" />
+    <entry file="file://$PROJECT_DIR$/style/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/js/scroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="46" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1273">
+          <caret line="85" column="51" lean-forward="true" selection-start-line="85" selection-start-column="51" selection-end-line="85" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/Gallery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="58" lean-forward="true" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/save_image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="49" column="84" lean-forward="true" selection-start-line="49" selection-start-column="84" selection-end-line="49" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/comments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fpass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="37" column="58" lean-forward="true" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/setup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="125" column="19" lean-forward="true" selection-start-line="125" selection-start-column="19" selection-end-line="125" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1464">
+          <caret line="31" column="49" lean-forward="true" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/js/comment_.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/js/photo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/camera.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="28" column="101" selection-start-line="28" selection-start-column="101" selection-end-line="28" selection-end-column="101" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
