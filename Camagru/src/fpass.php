@@ -23,7 +23,7 @@ if(isset($_POST['btn-submit']))
 			$stmt = $con->prepare("UPDATE users SET Token=:token WHERE email=:email");
 			$stmt->execute(array(":token" => $code, "email" => $email));
 
-			echo $message = "
+			$message = "
 				   Hello , $email
 
 				   We got requested to reset your password, if you do this then just click the following link to reset your password, if not just ignore this email,
@@ -49,7 +49,7 @@ if(isset($_POST['btn-submit']))
 	}
 	catch (PDOException $e)
     {
-        echo "<script>alert('Error: $e'); location.href='register.php' </script>";
+        echo "<script>alert('Error: $e'); </script>";
     }
 }
 ?>

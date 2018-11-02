@@ -5,6 +5,7 @@ require "../config/conn.php";
 
 if (isset($_POST['delete'])) {
 
+
 	$id = $_POST['delete'];
 	//UNCOMMENT SCRIPT BELOW TO CHECK VALUE SENT THROUGH TO DB TO BE DELETED
 //	echo "<script> alert('This is image id to delete $id, and user $uid.');</script>";
@@ -24,5 +25,4 @@ if (isset($_POST['delete'])) {
 }
 else
     echo "<script> alert('oops. something went wrong. This is posted id/delete $id, and user $uid.'); location.href='../index.php'; </script>";
-
 ?>

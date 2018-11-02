@@ -99,7 +99,7 @@ $image0 = 'data:image/png;' . $type0 . ';base64,' . base64_encode($data0);
         </div>
     </div>
     <div class="column right">
-        <form method="post" enctype="multipart/form-data" action="delete.php">
+        <form method="post" enctype="multipart/form-data" >
             <?php
 
             $stmt = $con->prepare("SELECT * FROM images WHERE userid = $id ORDER BY imageid DESC LIMIT 6");
@@ -115,9 +115,8 @@ $image0 = 'data:image/png;' . $type0 . ';base64,' . base64_encode($data0);
 
                 <div class="row">
                 <div class="cc-selector">
-                    <label for="delete" class="button" style="width: 100%; margin: 1%">Delete Image</label>
-                    <input class="hidden" type="submit" onchange='this.form.submit();' style="width:100%"
-                           value="<?php echo $row['imageid'] ?>" name="delete" id="delete"><br>
+                    <button class="button" type="submit" onclick="return Delete(this.value);" style="width:100%"
+                            value="<?php echo $row['imageid'] ?>" name="delete" id="delete"> Delete image</button><br>
                     <img class="photo" name="delete" src="uploads/<?php echo $row['picname'] ?>"
                          style="width:100%" alt="<?php echo $row['picname'] ?>">
                 </div>

@@ -110,11 +110,14 @@ function get_more()
     while ($row = $aItems->fetch(PDO::FETCH_ASSOC)) {
         $image = $row['picname'];
         $imageid = $row['imageid'];
+        $userid_ = $row['userid'];
         $i++;
+        $pic_ownr = $con -> query("SELECT username FROM users WHERE userid = $userid_");
+        $pic_ownr = $pic_ownr->fetch(PDO::FETCH_COLUMN);
 
         //<-- Comments section -->?>
         <tr valign="middle !important">
-            <td valign="top" class='photo'><img class="photo_wrp" src="uploads/<?php echo $image; ?>">
+            <td valign="top" class='photo'><p><b><?=$pic_ownr?></b></p><img class="photo_wrp" src="uploads/<?php echo $image; ?>">
                 <form class="middle" method="post" enctype="multipart/form-data">
                         <span>
                             <label class="field field_type3">
@@ -153,7 +156,8 @@ style="width: 100%; height: 100%"
                             </button>
 
                             </div>
-                            <br>
+
+                    <br>
                             <div class="comments">
 
                             <?php

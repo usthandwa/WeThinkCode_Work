@@ -1,6 +1,6 @@
 function likeImage(ob) {
     try {
-        if (navigator.userAgent.search("Firefox") > -1)
+        if (1)//(navigator.userAgent.search("Firefox") > -1)
             location.href = 'comments.php?action=like&id=' +ob.value;
         else {
             $.ajaxSetup({
@@ -25,7 +25,7 @@ function likeImage(ob) {
 function submitComment(ob) {
     try {
         var comment = document.querySelector("textarea[name='"+ ob.value +"']");
-        if (navigator.userAgent.search("Firefox") > -1)
+        if (1)//(navigator.userAgent.search("Firefox") > -1)
             location.href = 'comments.php?action=comment&id=' +ob.value + '&comment=' +comment.value;
         else {
             $.ajaxSetup({

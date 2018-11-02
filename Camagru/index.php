@@ -21,7 +21,6 @@
 			$image_id = $_POST['comment'];
 			echo "<script>location.href='Gallery.php?action=comment&id=$image_id&message=$image_id'</script>";
 		}
-		echo $class->verify('usthandwa@gmail.com', 'test', '1234');
 	}
 ?>
 <!DOCTYPE HTML>

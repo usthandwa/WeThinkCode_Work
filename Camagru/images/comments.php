@@ -23,15 +23,16 @@ try {
             $commenter = $_SESSION['fname'];
             if (isset($_SESSION['id'])) {
 
-                $user_posted = $con->prepare("SELECT count(2), userid FROM images WHERE imageid=:image_id");
-                $user_posted->execute(['image_id' => $image_id])[0]['userid'];
-                $user_posted = $user_posted->fetch(PDO::FETCH_COLUMN);
+                $user_posted = $con->prepare("SELECT userid FROM images WHERE imageid=:image_id");
+                $user_posted->execute(['image_id' => $image_id]);
+                $user_posted = $user_posted->fetch(PDO::FETCH_COLUMN)[0]['userid'];
 
                 $recipient = $con->prepare("SELECT email FROM users WHERE userid=:userid");
                 $recipient->execute([':userid' => $user_posted])[0]['email'];
                 $recipient = $recipient->fetch(PDO::FETCH_COLUMN);
 
                 $message = htmlspecialchars($_GET['message']);
+
                 $savior = $con->prepare("SELECT comment FROM comments WHERE user=:userid AND image_id=:image_id");
                 $savior->execute([':userid' => $commenter, ':image_id' => $image_id]);
                 $savior = $savior->fetchAll(PDO::FETCH_COLUMN);
@@ -49,12 +50,12 @@ try {
                 }
 
                 /* According to email notif prefs */
-                $pic_owner = $con->query("SELECT firstname FROM users WHERE userid= '" . htmlentities($user_posted) . "'")->fetch()['firstname'];
-                $notif_db = $con->query("SELECT notif FROM users WHERE userid= '" . htmlentities($user_posted) . "'")->fetch()[0]['notif'];
-                if (!$notif_db) {
+                $pic_owner = $con->query("SELECT username FROM users WHERE userid= '" . htmlentities($user_posted) . "'")->fetch()['username'];
+                $notif_db = $con->query("SELECT notif FROM users WHERE userid= '" . htmlentities($user_posted) . "'")->fetch()['notif'];
+                if ($notif_db) {
                     $htmlStr = "";
                     $htmlStr .= "Hi " . $pic_owner . "<br /><br />";
-                    $htmlStr .= $commenter . " commented on your photo and said:<br />" . $message . "<br /><br />";
+                    $htmlStr .= $commenter . " commented on your photo and said: <br />" . $message . "<br /><br />";
                     $htmlStr .= "Kind regards, <br />";
                     $htmlStr .= "Camargu";
                     $name = "Camagru";

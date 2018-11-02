@@ -54,7 +54,7 @@ video {
 
 .grid {
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: auto auto auto;
 	justify-items: center;
 	padding-top: 2%;
 	grid-gap: 2%
@@ -209,8 +209,8 @@ li :after {
 
 .photo {
 	border: .2px solid transparent;
-	/*float: left;*/
-	margin: 4px;
+	border-radius: 8px;
+	margin: 1px;
 	overflow: hidden;
 	/*padding: 4px;*/
 	/*white-space: nowrap;*/
@@ -243,7 +243,7 @@ li :after {
 .photo_wrp {
 	background-color: #FAFAFA;
 	height: auto;
-	margin: 20% auto 0;
+	margin: 5% auto 0;
 	overflow: hidden;
 	padding: 15px;
 	text-align: center;
@@ -451,6 +451,10 @@ video {
 	border: 3px solid #ccc;
 	border-radius: 10px;
 	margin: 0 0 20px 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .snap{
@@ -462,6 +466,10 @@ video {
 	border-radius: 10px;
 	/*width: 250px;*/
 	/*height: 150px;*/
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .demo-wrapper {
 	min-height: 500px;

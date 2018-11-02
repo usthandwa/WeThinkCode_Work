@@ -69,3 +69,20 @@ function readImage() {
 
 fileUpload.onchange = readImage;
 
+function Delete(ob) {
+    var r = confirm("Do you really, want to delete this image " +ob+" ?");
+    if (r != false) {
+        $.ajaxSetup({
+            cache: false
+        });
+        $.ajax({
+            type: 'POST',
+            url: "delete.php",
+            data: {delete: ob},
+            success: function (data) {
+                console.log(data);
+            }
+        });
+    }
+    location.reload();
+}

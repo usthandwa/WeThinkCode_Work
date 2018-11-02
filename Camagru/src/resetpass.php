@@ -1,9 +1,9 @@
 <?php
-require_once 'config/conn.php';
+require_once '../config/conn.php';
 
 if(empty($_GET['id']) && empty($_GET['code']))
 {
-	echo "<script>location.href='index.php' </script>";
+	echo "<script>location.href='fpass.php' </script>";
 }
 
 if(isset($_GET['id']) && isset($_GET['code']))
@@ -24,35 +24,30 @@ if(isset($_GET['id']) && isset($_GET['code']))
 
 			if($cpass!==$pass)
 			{
-				$msg = "<div class='alert alert-block'>
-						<button class='close' data-dismiss='alert'>&times;</button>
+				$msg = "<div>
+						<button class='button' data-dismiss='alert'>X</button>
 						<strong>Sorry!</strong>  Password Doesn't match. 
 						</div>";
 			}
 			else
 			{
+			    $code = 1;
 				$password = serialize(hash('whirlpool', $cpass));
-				$stmt = $con->prepare("UPDATE users SET pword=:upass WHERE userid=:uid");
-				$stmt->execute(array(":upass"=>$password,":uid"=>$rows['userid']));
+				$stmt = $con->prepare("UPDATE users SET pword=:upass, Token=:token WHERE userid=:uid");
+				$stmt->execute(array(":upass"=>$password,":uid"=>$rows['userid'], ":token" => 1));
 
-				$msg = "<div class='alert alert-success'>
-						<button class='close' data-dismiss='alert'>&times;</button>
-						Password Changed.
-						</div>";
-				header("refresh:5;index.php");
+				$msg = 	"Password Changed";
 			}
 		}
 	}
 	else
 	{
 		$msg = "<div class='alert alert-success'>
-				<button class='close' data-dismiss='alert'>&times;</button>
-				No Account Found, Try again
+				<button class='button' data-dismiss='alert'>X</button>
+				No Matching Account Found or Code already used, Try again.
+				<script> location.replace('fpass.php') </script>
 				</div>";
-
 	}
-	
-	
 }
 
 ?>
@@ -71,11 +66,12 @@ if(isset($_GET['id']) && isset($_GET['code']))
         <form class="page__section" method="post">
         <h3 class="">Password Reset.</h3><hr />
         <?php
-        if(isset($msg))
-		{
-			echo $msg;
-		}elseif (!strcmp($msg, "Password Changed")){
-            echo "<script> alert ('Password changed, you can now log in'); location.href = 'index.php'; </script>";
+		if (!strcmp($msg, "Password Changed")){
+            echo "<script> alert ('Password changed, you can now log in'); location.href = 'login.php'; </script>";
+        }
+        if(isset($msg)) {
+            echo $msg;
+            sleep(5);
         }
 		else {
 		?>
