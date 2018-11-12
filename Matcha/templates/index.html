@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if session.get('logged_in') %}
+        <p>You're logged in already!</p>
+    {% else %}
+        <div id="container_demo">
+            <a class="hiddenanchor" id="toregister"></a>
+            <a class="hiddenanchor" id="tologin"></a>
+            <div id="wrapper">
+                <div id="login" class="animate form">
+                    <form action="/login" method="POST" autocomplete="on">
+                        <h1>Log in</h1>
+                        <p>
+                            <label for="username" class="uname" data-icon="u"> Your email or username </label>
+                            <input id="username" name="username" required="required" type="text"
+                                   placeholder="myusername or mymail@mail.com"/>
+                        </p>
+                        <p>
+                            <label for="password" class="youpasswd" data-icon="p"> Your password </label>
+                            <input id="password" name="password" required="required" type="password"
+                                   placeholder="eg. X8df!90EO" autocomplete="off"/>
+                        </p>
+                        <p class="keeplogin">
+                            <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping"/>
+                            <label for="loginkeeping">Keep me logged in</label>
+                        </p>
+                        <p class="login button">
+                            <input type="submit" value="Login" name="login"/>
+                        </p>
+                        <p class="change_link">
+                            Not a member yet ?
+                            <a href="#toregister" class="to_register">Join us</a>
+                        </p>
+                    </form>
+                </div>
+
+                <div id="register" class="animate form">
+                    <form action="/register" method="POST" autocomplete="on">
+                        <h1> Sign up </h1>
+                        <p>
+                            <label for="fnamesignup" class="uname" data-icon="u">Your firstname</label>
+                            <input id="fnamesignup" name="fnamesignup" required="required" type="text"
+                                   placeholder="my first name"/>
+                        </p>
+                        <p>
+                            <label for="lnamesignup" class="uname" data-icon="u">Your lastname</label>
+                            <input id="lnamesignup" name="lnamesignup" required="required" type="text"
+                                   placeholder="my surname/lastname"/>
+                        </p>
+                        <p>
+                            <label for="unamesignup" class="uname" data-icon="u">Your username</label>
+                            <input id="unamesignup" name="unamesignup" required="required" type="text"
+                                   placeholder="mysuperusername690"/>
+                        </p>
+                        <p>
+                            <label for="emailsignup" class="youmail" data-icon="e"> Your email</label>
+                            <input id="emailsignup" name="emailsignup" required="required" type="email"
+                                   placeholder="mysupermail@mail.com"/>
+                        </p>
+                        <p>
+                            <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+                            <input id="passwordsignup" name="passwordsignup" required="required" type="password"
+                                   placeholder="eg. X8df!90EO" autocomplete="off"/>
+                        </p>
+                        <p>
+                            <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your
+                                password </label>
+                            <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required"
+                                   type="password" placeholder="eg. X8df!90EO" autocomplete="off"/>
+                        </p>
+                        <p class="signin button">
+                            <input type="submit" value="Sign up" name="login"/>
+                        </p>
+                        <p class="change_link">
+                            Already a member ?
+                            <a href="#tologin" class="to_register"> Go and log in </a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
