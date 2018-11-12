@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="wrapper">
+        <div id="login"  class="animate form">
+          <h1>Search New Partner</h1>
+            <section>
+          <div class="">
+            <form action="#" method="get">
+              <fieldset>
+              <div class="search_row">
+                <div class="search_column_1">
+                  <label>I am a</label>
+                </div>
+                <div class="search_column_2">
+                  <select class="gender">
+                    <option>Female</option>
+                  </select>
+                  <label>Seeking a</label>
+                  <select class="gender">
+                    <option>Male</option>
+                  </select>
+                </div>
+              </div>
+              <div class="search_row">
+                <div class="search_column_1">
+                  <label>Looking for a</label>
+                </div>
+                <div class="search_column_2">
+                  <select class="date">
+                    <option>Friend</option>
+                  </select>
+                </div>
+              </div>
+              <div class="search_row">
+                <div class="search_column_1">
+                  <label>Desired Age</label>
+                </div>
+                <div class="search_column_2">
+                  <select class="date">
+                    <option>23 - 29 yrs.</option>
+                  </select>
+                </div>
+              </div>
+              <div class="search_row">
+                <div class="search_column_1">
+                  <label>Desired City</label>
+                </div>
+                <div class="search_column_2">
+                  <select class="date">
+                    <option>choose city</option>
+                  </select>
+                </div>
+              </div>
+{#              <div class="search_row">#}
+{#                <div class="search_column_1">#}
+{#                  <label>By Profile ID</label>#}
+{#                </div>#}
+{#                <div class="search_column_2">#}
+{#                  <input type="text" name="" value="" />#}
+{#                  <label class="check">With Photo</label>#}
+{#                  <input type="checkbox" name="" value="" class="checkbox"/>#}
+{#                </div>#}
+{#              </div>#}
+              </fieldset>
+                <p class="login button">
+                    <input type="submit" value="Find Soul Mate" />
+                </p>
+            </form>
+          </div>
+            </section>
+        </div>
+</div>
+{% endblock %}
