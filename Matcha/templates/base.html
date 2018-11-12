@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Match the best dating site"/>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/demo.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/animate-custom.css') }}"/>
+    <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    {% if title %}
+        <title>{{ title }} | Matcha</title>
+    {% else %}
+        <title>Welcome to Matcha</title>
+    {% endif %}
+</head>
+<body>
+<ul class="navbar">
+    {% if not session.logged_in%}
+        <li style="float: right"><a href="{{ url_for('login') }}">Login</a></li>
+        <li style="float: right"><a href="{{ url_for('register') }}">Register</a></li>
+      {% else %}
+        <li><a  href="/home">Home</a></li>
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="/search">Search</a>
+        <li><a href="/EditProfile">Account</a></li>
+        <li style="float: right"><a href="/logout">LogOut</a></li>
+      {% endif %}
+</ul>
+<div class="container">
+<header>
+    <h1><span>HI {{ logged_in }}</span></h1>
+    <h1><span>Welcome to MATCHA | We'll Match'ya</span></h1>
+</header>
+
+<section>
+    {% block content %}{% endblock %}
+    {% if error %}
+        <style> #id01 {
+            display: block
+        }</style>
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom">
+                <div class="keeplogin">
+                    <span onclick="document.getElementById('id01').style.display='none'"
+                          class="w3-button w3 w3-display-topright w3-animate-fading">&times;</span>
+                    <p >Error : </p> {{ error }}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+</section>
+
+</div>
+<script type="text/javascript" src="{{ url_for('static',filename='js/general.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename='js/map.js') }}"></script>
+</body>
+
+<footer class="footer navbar">
+    <hr/>
+    <strong>@szama #MATCHA</strong>
+    <br>
+    <strike>Disclaimer: I really didn't know what I was doing with this project, I never even use dating site, but all
+        in all, I had to take the time out and do this so here goes nothing </strike>>
+    <hr/>
+</footer>
+</html>
