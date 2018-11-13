@@ -1,13 +1,14 @@
 from flask import Flask, render_template, redirect, url_for, request, session
 import os, re, hashlib
 from db import query
-from setup import setup
+from display_ import get_all
 from sendmail import sendmail
+from setup import setup
 
 app = Flask(__name__)
 app.secret_key = "7h1$/H0u$3\b17ch1n'"
 
-
+setup()
 def get_hash(code):
     hashcode = code.encode('utf-8')
     return hashlib.sha224(hashcode).hexdigest()
@@ -16,7 +17,6 @@ def get_hash(code):
 @app.route('/')
 def home():
     if not session.get('logged_in'):
-        setup()
         return login()
     else:
         return browse()
@@ -27,7 +27,8 @@ def browse():
     if not session.get('logged_in'):
         return login()
     else:
-        return render_template('home.html', title='Home', logged_in=session.get('logged_in'))
+        result = get_all()
+        return render_template('home.html', title='Home', logged_in=session.get('logged_in'), data=result)
 
 
 # Route for handling the login page logic
@@ -51,10 +52,10 @@ def login():
             res = query("SELECT * FROM User WHERE username = '{}' AND pword = '{}'".format(username, passw))
             if res:
                 for row in res:
-                    if username != row[3] or passw != row[5]:
+                    if row["username"] != username or passw != row["pword"]:
                         print("not printing for some reason")
                         error = 'Invalid Credentials. Please try again.'
-                    elif username == row[3] and passw == row[5]:
+                    elif username == row["username"] and passw == row["pword"]:
                         session['logged_in'] = username
                         print(session['logged_in'])
                         return redirect(url_for('browse'))
@@ -79,7 +80,7 @@ def register():
             email = request.form['emailsignup']
             location = "somewhere, will create this soon"
             code = get_hash(username)
-            res = query("SELECT username FROM User WHERE username = '%s'", username)
+            res = query("""SELECT username FROM User WHERE username = '%s'""" % username)
             if re.match(r"[^@\s]+@[^@\s]+\.[a-zA-Z0-9]+$", email):
                 if request.form['passwordsignup'] == request.form['passwordsignup_confirm']:
                     if re.match(

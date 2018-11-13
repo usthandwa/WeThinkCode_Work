@@ -25,3 +25,20 @@ $(".navbar a").on("click", function(){
    $(".navbar").find(".active").removeClass("active");
    $(this).parent().addClass("active");
 });
+
+
+//Image uplaod things
+$("#profileImage").click(function (e) {
+    $("#imageUpload").click();
+});
+
+function fasterPreview(uploader) {
+    if (uploader.files && uploader.files[0]) {
+        $('#profileImage').attr('src',
+            window.URL.createObjectURL(uploader.files[0]));
+    }
+}
+
+$("#imageUpload").change(function () {
+    fasterPreview(this);
+});

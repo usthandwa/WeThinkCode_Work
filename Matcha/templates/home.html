@@ -6,48 +6,70 @@
         <a class="hiddenanchor" id="toregister"></a>
         <a class="hiddenanchor" id="tologin"></a>
         <a class="hiddenanchor" id="tochat"></a>
-        <div id="wrapper">
-            <div id="1">
-                <div id="login" class="animate form change_link">
-                    <h1>Profile Details</h1>
-                    <div style="float: left; padding-right: 50px">
-                        <a class="to_register" href="#toregister">
-                            <img src="/static/images/1.png" alt="Forest" style="width:150px;position:relative">
-                        </a>
-                    </div>
+        {% if data %}
+            {% for row in data %}
+                <div id="wrapper">
+                    <div id="1">
 
-                    <div style="text-align: center"><h3>{{ username }} username</h3>
-                        <h4>{{ popularity }} Popularity - Likes</h4>
-                        <p></p>
-                        <p>
-                        <h3>Bio</h3>
-                        {{ bio }}something about how you're not here for hoockups when secretlt you know
-                        that that's exactly why you joined
+                        <div id="login" class="animate form change_link">
 
-                        a cute byline to hopefully catch a dirty mind
+                            <div id="profile-container" style="float: left; padding-right: 50px">
+                                <a class="to_register" href="#toregister">
+                                    <img src="/static/images/1.png" alt="Forest" style="width:150px;position:relative">
+                                </a>
+                            </div>
+                            <div style="text-align: center"><h3>{{ row["username"] }} </h3>
+                                <h4>{{ row["lastname"] }} Popularity - Likes</h4>
+                                <p></p>
+                                <p>
+                                <h3>Bio</h3>
+                                {{ row["discription"] }}
+                                </p>
+                                <h3>Interests</h3>
+                                <p> {{ row["interests"] }} '#'?'
+                                </p>
 
-                        </p>
-                        <h3>Interests</h3>
-                        <p> {{ interests }} #Yolo, #useless, #something, #reusable, #do_I_put_the'#'?'
-                        </p>
-                        <p>like user Chat to user</p></div>
-                    <a id="btnClick">view more...</a>
-                </div>
+                            </div>
 
-                <div id="register" class="slide animate form change_link">
-                    <a class="w3-button w3 w3-display-topright w3-animate-fading" href="#tologin">&times;</a>
+                            <div id="register" class="slide animate form change_link">
+                                <a class="w3-button w3 w3-display-topright w3-animate-fading"
+                                   href="#tologin">&times;</a>
 
-                    <img class="mySlides" src="/static/images/1.png" style="width:100%">
-                    <img class="mySlides" src="/static/images/2.png" style="width:100%">
-                    <img class="mySlides" src="/static/images/3.png" style="width:100%">
-                    <img class="mySlides" src="/static/images/4.png" style="width:100%">
-                    <img class="mySlides" src="/static/images/5.png" style="width:100%">
+                                <img class="mySlides" src="/static/images/1.png" style="width:100%">
+                                <img class="mySlides" src="/static/images/2.png" style="width:100%">
+                                <img class="mySlides" src="/static/images/3.png" style="width:100%">
+                                <img class="mySlides" src="/static/images/4.png" style="width:100%">
+                                <img class="mySlides" src="/static/images/5.png" style="width:100%">
 
-                    <a class="prev" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
-                    <a class="next" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
-                    <a href="#tochat">like user Chat to user</a>
-                </div>
-                <div id="chat" class="animate form" style="width:90%">
+                                <a class="prev" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+                                <a class="next" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+                                <a href="#tochat">like user Chat to user</a>
+
+                                <script>
+                                    var slideIndex = 1;
+                                    showDivs(slideIndex);
+
+                                    function plusDivs(n) {
+                                        showDivs(slideIndex += n);
+                                    }
+
+                                    function showDivs(n) {
+                                        var i;
+                                        var x = document.getElementsByClassName("mySlides");
+                                        if (n > x.length) {
+                                            slideIndex = 1
+                                        }
+                                        if (n < 1) {
+                                            slideIndex = x.length
+                                        }
+                                        for (i = 0; i < x.length; i++) {
+                                            x[i].style.display = "none";
+                                        }
+                                        x[slideIndex - 1].style.display = "block";
+                                    }
+                                </script>
+
+                                <div id="chat" class="animate form" style="width:90%">
 
                     <textarea class="button"
                               placeholder="Enter a message"
@@ -55,68 +77,12 @@
                               name="chat"
                               id="message">
                     </textarea>
-                </div>
-            </div>
-            <div id="2" style="display:none;">
-                <div id="login" class="animate form change_link">
-                    <h1>Profile Details</h1>
-                    <div class="detail">
-                        <div class="row">
-                            <p class="left">Name :</p>
-                            <p class="right">Jenifer</p>
-                        </div>
-                        <div class="row_1">
-                            <p class="left">Age :</p>
-                            <p class="right">21 Years</p>
-                        </div>
-                        <div class="row">
-                            <p class="left">City :</p>
-                            <p class="right">
-
-                            </p>
-                        </div>
-                        <div class="row_1">
-                            <p class="left">humor :</p>
-                            <p class="right">clever/ quick witted</p>
-                        </div>
-                        <div class="row">
-                            <p class="left">living :</p>
-                            <p class="right">with parents</p>
-                        </div>
-                        <div class="row_1">
-                            <p class="left">chat</p>
-                            <a class="right" href="#tochat">Start conversation</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <br>
-                    <a id="btnClick">back...</a>
                 </div>
-            </div>
-        </div>
-        <script>
-            var slideIndex = 1;
-            showDivs(slideIndex);
-
-            function plusDivs(n) {
-                showDivs(slideIndex += n);
-            }
-
-            function showDivs(n) {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                if (n > x.length) {
-                    slideIndex = 1
-                }
-                if (n < 1) {
-                    slideIndex = x.length
-                }
-                ;
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                x[slideIndex - 1].style.display = "block";
-            }
-        </script>
-        >
+            {% endfor %}
+        {% endif %}
     </div>
 {% endblock %}

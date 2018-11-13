@@ -4,5 +4,6 @@ from db import query
 from setup import setup
 from sendmail import sendmail
 setup()
+print('Setup?')
 app = Flask(__name__)
 app.secret_key = "7h1$/H0u$3\b17ch1n'"

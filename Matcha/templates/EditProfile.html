@@ -5,24 +5,29 @@
         <div id="login" class="animate form">
             <h1>Edit Profile</h1>
             <h4><p>Welcome to your profile, please feel free to update your details, </p>
-            <p>if it's first time here, ensure to give us your gender, sexual preferences and description of
-                yourself </p> </h4>
+                <p>if it's first time here, ensure to give us your gender, sexual preferences and description of
+                    yourself </p></h4>
             <form method="POST" action="#"
                   enctype="multipart/form-data">
                 <table>
                     <td>
+                        <div id="profile-container">
+                            <image id="profileImage" src="/static/images/1.png"/>
+                        </div>
+                        <input id="imageUpload" type="file"
+                               name="profile_photo" placeholder="Photo" required="" capture>
                         <span class="field__label">Change your firstname</span>
                         <input name="fname"
                                value="{{ firstname }}"
                                placeholder="change your firstname"/>
                         <label class="field field_type3">
-                              <span class="field__label">Change your lastname</span>
+                            <span class="field__label">Change your lastname</span>
                             <input name="lname" class="field__input"
                                    value="{{ lastname }}"
                                    placeholder="change your lastname"/>
                         </label>
                         <label class="field field_type3">
-                              <span class="field__label">Change your username</span>
+                            <span class="field__label">Change your username</span>
                             <input name="uname" class="field__input"
                                    value="{{ username }}"
                                    placeholder="change username"/>
@@ -30,7 +35,7 @@
                         </label>
 
                         <label class="field field_type3">
-                  <span class="field__label">Change your e-mail</span>
+                            <span class="field__label">Change your e-mail</span>
                             <input type="email" name="email"
                                    class="field__input"
                                    value="{{ email }}"
@@ -39,18 +44,18 @@
                         </label>
                         <br>
                         <label class="field field_type3">
-						            <span class="field__label" id="mapholder"><a onclick="getLocation()">getlocation</a></span>
+                            <span class="field__label" id="mapholder"><a onclick="getLocation()">getlocation</a></span>
                         </label>
                         <br>
                         <label class="field field_type3">
-                  <span class="field__label">Short Bio</span><br>
+                            <span class="field__label">Short Bio</span><br>
                             <textarea name="bio"
                                       class="field__input"
                                       placeholder="A short description of who you are" rows="4"></textarea>
                         </label>
                         <br>
                         <label class="field field_type3">
-                  <span class="field__label">Short Bio</span>
+                            <span class="field__label">Short Bio</span>
                             <input type="text" name="bio"
                                    class="field__input"
                                    value="{{ interests }}"
