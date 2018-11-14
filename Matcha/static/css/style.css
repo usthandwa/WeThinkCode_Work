@@ -232,17 +232,31 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 
+@media (max-width: 768px) {
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		width: 200px;
+	}
+
+	li a {
+		display: block;
+		padding: 8px 0 8px 16px;
+		text-decoration: none;
+	}
+}
+
 img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 /*.navbar{position: fixed; width: 100vw;}*/
 /* remove codrops styles and reset the whole thing */
 #container_demo{
-	 text-align: left;
-	 margin: 0;
-	 padding: 0;
-	 margin: 0 auto;
-	 font-family: "Trebuchet MS","Myriad Pro",Arial,sans-serif;
+	text-align: left;
+	padding: 0;
+	font-family: "Trebuchet MS", "Myriad Pro", Arial, sans-serif;
+	height: inherit;
 }
 
 /** fonts used for the icons **/ 
@@ -272,12 +286,13 @@ a.hiddenanchor{
 }
 /** The wrapper that will contain our two forms **/
 #wrapper{
-	width: 60%;
+	width: 65%;
 	right: 0px;
-	min-height: 560px;	
-	margin: 0px auto;	
-	width: 500px;
+	min-height: 560px;
+	margin: 0px auto;
 	position: relative;
+	align-items: center;
+	align-content: center;
 }
 /**** Styling the form elements **/
 

@@ -1,0 +1,25 @@
+{% extends base.html %}
+{% block content %}
+    <div class="form container">
+        <div class="page__section">
+            <label class="field field_type3">
+                <input name="pass" type="password" class="field__input" REQUIRED
+                       placeholder="New Password" autocomplete="off">
+                <span class="field__label-wrap">
+						<span class="field__label">Enter your password</span>
+					</span>
+            </label>
+        </div>
+        <div class="page__section">
+            <label class="field field_type3">
+                <input name="confirm-pass" type="password" class="field__input" REQUIRED
+                       placeholder="Tip: same as above" autocomplete="off">
+                <span class="field__label-wrap">
+						<span class="field__label">Confirm your password</span>
+					</span>
+            </label>
+        </div>
+        <hr/>
+        <button class="button" type="submit" name="btn-reset-pass">Reset Your Password</button>
+    </div>
+{% endblock %}

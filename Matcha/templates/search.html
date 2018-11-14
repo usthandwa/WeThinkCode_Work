@@ -15,10 +15,16 @@
                 <div class="search_column_2">
                   <select class="gender">
                     <option>Female</option>
+                      <option>Female</option>
+                      <option>Both</option>
+                      <option>Bi</option>
                   </select>
                   <label>Seeking a</label>
                   <select class="gender">
                     <option>Male</option>
+                      <option>Female</option>
+                      <option>Both</option>
+                      <option>Bi</option>
                   </select>
                 </div>
               </div>
@@ -29,6 +35,10 @@
                 <div class="search_column_2">
                   <select class="date">
                     <option>Friend</option>
+                      <option>life Partner</option>
+                      <option>Sex</option>
+                      <option>Fun</option>
+                      <option>Relationship</option>
                   </select>
                 </div>
               </div>
@@ -38,30 +48,48 @@
                 </div>
                 <div class="search_column_2">
                   <select class="date">
-                    <option>23 - 29 yrs.</option>
+                      <option>20 - 29 yrs.</option>
+                      <option>30 - 39 yrs.</option>
+                      <option>40 - 49 yrs.</option>
+                      <option>50 - 59 yrs.</option>
+                      <option>60 - ~ yrs.</option>
                   </select>
                 </div>
               </div>
+                  <div class="search_row">
+                      <div class="search_column_1">
+                          <label>Interested in</label>
+                      </div>
+                      <div class="search_column_2">
+                          <select class="date">
+                              {% for row in data %}
+                                  <option>life Partner</option>
+                              {% endfor %}
+                          </select>
+                      </div>
+                  </div>
               <div class="search_row">
                 <div class="search_column_1">
                   <label>Desired City</label>
                 </div>
                 <div class="search_column_2">
                   <select class="date">
-                    <option>choose city</option>
+                      {% for row in data %}
+                          <option>{{ row["location"] }}</option>
+                      {% endfor %}
                   </select>
                 </div>
               </div>
-{#              <div class="search_row">#}
-{#                <div class="search_column_1">#}
-{#                  <label>By Profile ID</label>#}
-{#                </div>#}
-{#                <div class="search_column_2">#}
-{#                  <input type="text" name="" value="" />#}
-{#                  <label class="check">With Photo</label>#}
-{#                  <input type="checkbox" name="" value="" class="checkbox"/>#}
-{#                </div>#}
-{#              </div>#}
+                  <div class="search_row">
+                      <div class="search_column_1">
+                          <label>By Username</label>
+                      </div>
+                      <div class="search_column_2">
+                          <input type="text" name="" value=""/>
+                          <label class="check">With Photo</label>
+                          <input type="checkbox" name="" value="" class="checkbox"/>
+                      </div>
+                  </div>
               </fieldset>
                 <p class="login button">
                     <input type="submit" value="Find Soul Mate" />

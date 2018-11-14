@@ -1,9 +1,13 @@
-from flask import Flask, render_template, redirect, url_for, request, session
-import os, re, hashlib
-from db import query
-from display_ import get_all
-from sendmail import sendmail
-from setup import setup
+from flask import Flask, render_template, redirect, url_for, request, session, flash
+import re, hashlib
+from config.db import query
+from views.display_ import get_all
+from views.sendmail import sendmail
+from config.setup import setup
+
+# from .geodata import get_geodata
+#
+# add = get_geodata("127.0.0.1")
 
 app = Flask(__name__)
 app.secret_key = "7h1$/H0u$3\b17ch1n'"
@@ -27,6 +31,7 @@ def browse():
     if not session.get('logged_in'):
         return login()
     else:
+        flash("Logged in successfully.")
         result = get_all()
         return render_template('home.html', title='Home', logged_in=session.get('logged_in'), data=result)
 
@@ -57,6 +62,7 @@ def login():
                         error = 'Invalid Credentials. Please try again.'
                     elif username == row["username"] and passw == row["pword"]:
                         session['logged_in'] = username
+                        flash("Logged in successfully.")
                         print(session['logged_in'])
                         return redirect(url_for('browse'))
                     else:
@@ -128,6 +134,18 @@ def editprofile():
 
 @app.route("/logout")
 def logout():
+    session['logged_in'] = False
+    return login()
+
+
+@app.route("/forgot_pw")
+def forgot():
+    session['logged_in'] = False
+    return login()
+
+
+@app.route("/reset_pw")
+def reset():
     session['logged_in'] = False
     return login()
 

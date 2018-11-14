@@ -1,4 +1,6 @@
-import db
+from config import db
+
+
 def search(name, age, fame, location, interest):
 if name:
     sql = """SELECT * FROM fame_rating LEFT JOIN users ON fame_rating.username = users.username LEFT JOIN interests ON fame_rating.username = interests.username WHERE rating LIKE '%name%' AND reg_verify = 1""";

@@ -1,8 +1,6 @@
-from flask import Flask, render_template, redirect, url_for, request, session
-import os, re, hashlib
-from db import query
-from setup import setup
-from sendmail import sendmail
+from flask import Flask
+from config.setup import setup
+
 setup()
 print('Setup?')
 app = Flask(__name__)

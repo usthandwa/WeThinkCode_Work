@@ -1,75 +1,73 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div id="wrapper">
+    <a class="hiddenanchor" id="toregister"></a>
+    <a class="hiddenanchor" id="tologin"></a>
+    <a class="hiddenanchor" id="tochat"></a>
+    {% if data %}
+        {% for row in data %}
+            <div id="wrapper">
+                <div id="1">
 
-        <a class="hiddenanchor" id="toregister"></a>
-        <a class="hiddenanchor" id="tologin"></a>
-        <a class="hiddenanchor" id="tochat"></a>
-        {% if data %}
-            {% for row in data %}
-                <div id="wrapper">
-                    <div id="1">
+                    <div id="login" class="animate form change_link">
 
-                        <div id="login" class="animate form change_link">
+                        <div id="profile-container" style="float: left; padding-right: 50px">
+                            <a class="to_register" href="#toregister">
+                                <img src="/static/images/1.png" alt="Forest" style="width:150px;position:relative">
+                            </a>
+                        </div>
+                        <div style="text-align: center"><h3>{{ row["username"] }} </h3>
+                            <h4>{{ row["lastname"] }} Popularity - Likes</h4>
+                            <p></p>
+                            <p>
+                            <h3>Bio</h3>
+                            {{ row["discription"] }}
+                            </p>
+                            <h3>Interests</h3>
+                            <p> {{ row["interests"] }} '#'?'
+                            </p>
 
-                            <div id="profile-container" style="float: left; padding-right: 50px">
-                                <a class="to_register" href="#toregister">
-                                    <img src="/static/images/1.png" alt="Forest" style="width:150px;position:relative">
-                                </a>
-                            </div>
-                            <div style="text-align: center"><h3>{{ row["username"] }} </h3>
-                                <h4>{{ row["lastname"] }} Popularity - Likes</h4>
-                                <p></p>
-                                <p>
-                                <h3>Bio</h3>
-                                {{ row["discription"] }}
-                                </p>
-                                <h3>Interests</h3>
-                                <p> {{ row["interests"] }} '#'?'
-                                </p>
+                        </div>
 
-                            </div>
+                        <div id="register" class="slide animate form change_link">
+                            <a class="w3-button w3 w3-display-topright w3-animate-fading"
+                               href="#tologin">&times;</a>
 
-                            <div id="register" class="slide animate form change_link">
-                                <a class="w3-button w3 w3-display-topright w3-animate-fading"
-                                   href="#tologin">&times;</a>
+                            <img class="mySlides" src="/static/images/1.png" style="width:100%">
+                            <img class="mySlides" src="/static/images/2.png" style="width:100%">
+                            <img class="mySlides" src="/static/images/3.png" style="width:100%">
+                            <img class="mySlides" src="/static/images/4.png" style="width:100%">
+                            <img class="mySlides" src="/static/images/5.png" style="width:100%">
 
-                                <img class="mySlides" src="/static/images/1.png" style="width:100%">
-                                <img class="mySlides" src="/static/images/2.png" style="width:100%">
-                                <img class="mySlides" src="/static/images/3.png" style="width:100%">
-                                <img class="mySlides" src="/static/images/4.png" style="width:100%">
-                                <img class="mySlides" src="/static/images/5.png" style="width:100%">
+                            <a class="prev" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+                            <a class="next" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+                            <a href="#tochat">like user Chat to user</a>
 
-                                <a class="prev" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
-                                <a class="next" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
-                                <a href="#tochat">like user Chat to user</a>
+                            <script>
+                                var slideIndex = 1;
+                                showDivs(slideIndex);
 
-                                <script>
-                                    var slideIndex = 1;
-                                    showDivs(slideIndex);
+                                function plusDivs(n) {
+                                    showDivs(slideIndex += n);
+                                }
 
-                                    function plusDivs(n) {
-                                        showDivs(slideIndex += n);
+                                function showDivs(n) {
+                                    var i;
+                                    var x = document.getElementsByClassName("mySlides");
+                                    if (n > x.length) {
+                                        slideIndex = 1
                                     }
-
-                                    function showDivs(n) {
-                                        var i;
-                                        var x = document.getElementsByClassName("mySlides");
-                                        if (n > x.length) {
-                                            slideIndex = 1
-                                        }
-                                        if (n < 1) {
-                                            slideIndex = x.length
-                                        }
-                                        for (i = 0; i < x.length; i++) {
-                                            x[i].style.display = "none";
-                                        }
-                                        x[slideIndex - 1].style.display = "block";
+                                    if (n < 1) {
+                                        slideIndex = x.length
                                     }
-                                </script>
+                                    for (i = 0; i < x.length; i++) {
+                                        x[i].style.display = "none";
+                                    }
+                                    x[slideIndex - 1].style.display = "block";
+                                }
+                            </script>
 
-                                <div id="chat" class="animate form" style="width:90%">
+                            <div id="chat" class="animate form" style="width:90%">
 
                     <textarea class="button"
                               placeholder="Enter a message"
@@ -77,12 +75,11 @@
                               name="chat"
                               id="message">
                     </textarea>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            {% endfor %}
-        {% endif %}
-    </div>
+            </div>
+        {% endfor %}
+    {% endif %}
 {% endblock %}
