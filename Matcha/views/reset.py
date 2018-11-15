@@ -34,3 +34,19 @@ def reset(email):
         echo = "<script>alert('Error: %s'); </script>" % e
         print(echo)
         return echo
+
+
+def change_pw(passw, cpass, *args):
+    if args:
+        uid = base64(args[1])
+        code = args[2]
+        stmt = db.query("SELECT * FROM users WHERE userid=%s AND Token=%s", (uid, code,))
+        if not stmt:
+            return "Error: was not able to verify user"
+    if cpass != passw:
+        return "Error: please confirm your password"
+    else:
+        code = 1;
+        passwd = config.get_hash(cpass)
+        db.query("UPDATE users SET pword=%s, Token=%s WHERE userid=%s", (passwd, code, args[1],))
+        return "Password Changed"
