@@ -2,21 +2,20 @@ import MySQLdb
 from config.config import get_config
 
 config_db = get_config()
-conn = None
 
-# def _connect(): 
 
 def get_db():
     return config_db['db']
 
 
-def query(sqlStr):
+def query(sqlStr, *args):
     conn = MySQLdb.connect(host=config_db['hostname'], user=config_db['username'], passwd=config_db['password'])
     cur = conn.cursor(MySQLdb.cursors.DictCursor)
     content = ""
     if not sqlStr.startswith('CREATE DATABASE'):
         cur.execute("USE Matcha")
-    cur.execute(sqlStr)
+    print(*args)
+    cur.execute(sqlStr, *args)
     content = cur.fetchall()
     conn.commit()
     conn.close()
