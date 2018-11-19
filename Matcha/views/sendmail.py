@@ -22,7 +22,7 @@ def sendmail(user, email, subject, msg):
     try:
         smtpObj = smtplib.SMTP('smtp.gmail.com', 587)
         smtpObj.starttls()
-        smtpObj.login('usthandwa@gmail.com', '1love4you2')
+        smtpObj.login('usthandwa@gmail.com', '1Love4You2#')
         smtpObj.sendmail(sender, receivers, msg_full)
         print("Successfully sent email")
         smtpObj.quit()

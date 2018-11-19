@@ -1,10 +1,11 @@
+import re
+
 from flask import Flask, render_template, redirect, url_for, request, session, flash
-import re, html
+
 from config.db import query
-from views.display_ import get_all
-from views.sendmail import sendmail
 from config.setup import setup
-from config.config import get_hash
+from views.display_ import get_all
+from views.reset import *
 
 # from .geodata import get_geodata
 #
@@ -58,9 +59,10 @@ def login():
                         print("not printing for some reason")
                         error = 'Invalid Credentials. Please try again.'
                     elif username == row["username"] and passw == row["pword"]:
-                        session['logged_in'] = username
-                        flash("Logged in successfully.")
-                        return redirect(url_for('browse'))
+                        if row['Verify'] == '0':
+                            session['logged_in'] = username
+                            flash("Logged in successfully.")
+                            return redirect(url_for('browse'))
                     else:
                         print("not printing for some reason")
                         error = 'Invalid Credentials. Please try again.'
@@ -75,7 +77,10 @@ def register():
     if session.get('logged_in'):
         return browse()
     else:
-        if request.method == 'POST':
+        if request.method == 'GET':
+            error = exists(request.args.get('email'), request.args.get('code'))
+            print(error)
+        elif request.method == 'POST':
             username = html.escape(request.form['unamesignup'])
             firstname = html.escape(request.form['fnamesignup'])
             lastname = html.escape(request.form['lnamesignup'])
@@ -93,11 +98,10 @@ def register():
                             error = "Please select a username as unique as you are"
                             print(error)
                         else:
-                            sendmail(username, html.unescape(email), "Account Verification",
-                                     "Please follow link to verify your account, before you log in. <href>")
                             query(
-                                """INSERT INTO "User" (firstname, lastname, username, email, pword, location, token) VALUES(%s,%s,%s,%s,%s,%s,%s)""",
-                                (firstname, lastname, username, email, passw, location, code))
+                                """INSERT INTO User (firstname, lastname, username, email, pword, location, token) VALUES(%s,%s,%s,%s,%s,%s,%s)""",
+                                (firstname, lastname, username, email, passw, location, code,))
+                            error = verify(username, email, code)
                     else:
                         error = "Ooops! Let's try that again, make sure you have at-least one upercase, lowercase and special character\nMake it 6 characters or longer"
                         print(error)
@@ -134,16 +138,26 @@ def logout():
     return login()
 
 
-@app.route("/forgot_pw")
+@app.route("/forgot_pw", methods=['GET', 'POST'])
 def forgot():
-    session['logged_in'] = False
-    return login()
+    error = ''
+    if request.method == 'POST':
+        error = reset(request.form['txtemail'])
+    elif request.method == 'GET':
+        return redirect(url_for('change'), code=307)
+    return render_template('forgot_pw.html', error=error, title='forgotten password',
+                           logged_in=session.get('logged_in'))
 
 
-@app.route("/reset_pw")
-def reset():
-    session['logged_in'] = False
-    return login()
+@app.route("/change_pw")
+def change():
+    error = ''
+    if request.method == 'POST':
+        error = change_pw(request.form['passwordsignup'], request.form['passwordsignup_confirm'])
+    elif request.method == 'GET':
+        error = change_pw(request.form['passwordsignup'], request.form['passwordsignup_confirm'],
+                          request.args.get['id'], request.args.get['code'])
+    return render_template('reset_pw.html', error=error, title='forgotten password', logged_in=session.get('logged_in'))
 
 
 if __name__ == '__main__':

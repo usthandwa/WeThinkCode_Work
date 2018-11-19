@@ -1,6 +1,6 @@
-{% extends base.html %}
+{% extends "base.html" %}
 {% block content %}
-    <div class="form container">
+    <form class="form container" method="post">
         <div class="page__section">
             <label class="field field_type3">
                 <input name="pass" type="password" class="field__input" REQUIRED
@@ -21,5 +21,5 @@
         </div>
         <hr/>
         <button class="button" type="submit" name="btn-reset-pass">Reset Your Password</button>
-    </div>
+    </form>
 {% endblock %}
