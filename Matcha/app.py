@@ -156,7 +156,7 @@ def change():
         error = change_pw(request.form['passwordsignup'], request.form['passwordsignup_confirm'])
     elif request.method == 'GET':
         error = change_pw(request.form['passwordsignup'], request.form['passwordsignup_confirm'],
-                          request.args.get['id'], request.args.get['code'])
+                          request.args.get('id'), request.args.get('code'))
     return render_template('reset_pw.html', error=error, title='forgotten password', logged_in=session.get('logged_in'))
 
 
