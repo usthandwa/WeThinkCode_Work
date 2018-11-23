@@ -1,0 +1,20 @@
+{% extends base.html %}
+{% block content %}
+    <form class="field__input" method="post">
+        <h2 class="">Forgot Password</h2>
+        <hr/>
+        <div class='alert alert-info'>
+            Please enter your email address. You will receive a link to create a new password via email.! <br>
+        </div>
+        <div class="page__section">
+            <label class="field field_type3">
+                <input type="email" class="field__input" name="txtemail" placeholder="Enter e-mail" required/>
+                <span class="field__label-wrap">
+							<span class="field__label">Enter your username</span>
+                    </span>
+            </label>
+        </div>
+        <hr/>
+        <button class="button" type="submit" name="btn-submit">Generate new Password</button>
+    </form>
+{% endblock %}

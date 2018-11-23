@@ -1,4 +1,4 @@
-import db
+from config import db
 
 
 def get_all():
