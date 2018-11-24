@@ -6,6 +6,7 @@ from config.db import query
 from config.setup import setup
 from views.display_ import get_all
 from views.reset import *
+from views.functions import *
 
 # from .geodata import get_geodata
 #
@@ -86,6 +87,8 @@ def register():
             lastname = html.escape(request.form['lnamesignup'])
             email = html.escape(request.form['emailsignup'])
             location = html.escape(request.form['location'])
+            if not location:
+                location = getadd()
             code = get_hash(username)
             res = query("""SELECT username FROM User WHERE username = %s""", (username,))
             if re.match(r"[^@\s]+@[^@\s]+\.[a-zA-Z0-9]+$", email):
