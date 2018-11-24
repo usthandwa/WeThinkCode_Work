@@ -98,101 +98,100 @@ def change_pw(passw, cpass, *args):
         db.query("UPDATE user SET pword=%s, Token=%s WHERE userid=%s", (passwd, code, args[1],))
         return "Password Changed"
 
-
-function
-login_status($user){
-    require
-"../server/pdo.php";
-if (session_status() == PHP_SESSION_NONE)
-{session_start();}
-if (!empty($_SESSION)){
-$user = $_SESSION['username'];
-
-$sql = "UPDATE users SET login_status = 'online' WHERE username = :username";
-$stmt = $db->prepare($sql);
-$stmt->bindParam(':username', $user);
-$stmt->execute();
-}
-}
-
-function
-check_propic($user){
-    require
-"../server/pdo.php";
-$sql = "SELECT * FROM propics WHERE username = :user";
-$stmt = $db->prepare($sql);
-$stmt->bindParam(':user', $user);
-$stmt->execute();
-$row = $stmt->fetch(PDO::FETCH_ASSOC);
-if (!empty($row['propic']))
-return true;
-return false;
-
-function
-
-$stmt = $db->prepare($sql);
-$stmt->bindParam(':username',$username);
-$stmt->execute();
-}
-function
-
-function
-remove_user($user){
-require
-"../server/pdo.php";
-if (session_status() == PHP_SESSION_NONE) {session_start();}
-$username = $_SESSION['username'];
-$pair = $username.
-' '.$user;
-$sql = "DELETE FROM matches WHERE pair = :pair";
-$stmt = $db->prepare($sql);
-$stmt->bindParam(":pair", $pair);
-$stmt->execute();
-$pair = $user.
-' '.$username;
-$sql = "DELETE FROM matches WHERE pair = :pair";
-$stmt = $db->prepare($sql);
-$stmt->bindParam(":pair", $pair);
-$stmt->execute();
-$sql = "DELETE FROM likes WHERE liker = :liker AND liked = :liked";
-$stmt = $db->prepare($sql);
-$stmt->bindParam(":liker", $username);
-$stmt->bindParam(":liked", $user);
-$stmt->execute();
-echo
-"<meta http-equiv='refresh' content='0'>";
-
-}
-function
-suggest_user($user){
-require
-"../server/pdo.php";
-if (session_status() == PHP_SESSION_NONE) {session_start();}
-$username = $_SESSION['username'];
-$sex_pref = $_SESSION['sex_pref'];
-$location = $_SESSION['location'];
-$fame = $_SESSION['fame'];
-$gender = $_SESSION['gender'];
-$sql = "SELECT * FROM users LEFT JOIN fame_rating ON users.username = fame_rating.username WHERE reg_verify = 1";
-$stmt = $db->prepare($sql);
-$stmt->execute();
-while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-if ($user == $row['username']){
-if ($sex_pref == $row['gender'] & & ($row['sexual_pref'] == $gender | | $row['sexual_pref'] == "both")){
-if ($fame == $row['rating'] | | $row['rating'] > $fame){
-if ($location == $row['user_location'])
-return true;
-}
-}
-else if ($sex_pref == "both"){
-if ($row['sexual_pref'] == $gender | | $row['sexual_pref'] == "both")
-if ($fame == $row['rating'] | | $row['rating'] > $fame){
-if ($location == $row['user_location'])
-    return true;
-}
-
-}
-}
-return false;
-}
-}
+# function
+# login_status($user){
+#     require
+# "../server/pdo.php";
+# if (session_status() == PHP_SESSION_NONE)
+# {session_start();}
+# if (!empty($_SESSION)){
+# $user = $_SESSION['username'];
+#
+# $sql = "UPDATE users SET login_status = 'online' WHERE username = :username";
+# $stmt = $db->prepare($sql);
+# $stmt->bindParam(':username', $user);
+# $stmt->execute();
+# }
+# }
+#
+# function
+# check_propic($user){
+#     require
+# "../server/pdo.php";
+# $sql = "SELECT * FROM propics WHERE username = :user";
+# $stmt = $db->prepare($sql);
+# $stmt->bindParam(':user', $user);
+# $stmt->execute();
+# $row = $stmt->fetch(PDO::FETCH_ASSOC);
+# if (!empty($row['propic']))
+# return true;
+# return false;
+#
+# function
+#
+# $stmt = $db->prepare($sql);
+# $stmt->bindParam(':username',$username);
+# $stmt->execute();
+# }
+# function
+#
+# function
+# remove_user($user){
+# require
+# "../server/pdo.php";
+# if (session_status() == PHP_SESSION_NONE) {session_start();}
+# $username = $_SESSION['username'];
+# $pair = $username.
+# ' '.$user;
+# $sql = "DELETE FROM matches WHERE pair = :pair";
+# $stmt = $db->prepare($sql);
+# $stmt->bindParam(":pair", $pair);
+# $stmt->execute();
+# $pair = $user.
+# ' '.$username;
+# $sql = "DELETE FROM matches WHERE pair = :pair";
+# $stmt = $db->prepare($sql);
+# $stmt->bindParam(":pair", $pair);
+# $stmt->execute();
+# $sql = "DELETE FROM likes WHERE liker = :liker AND liked = :liked";
+# $stmt = $db->prepare($sql);
+# $stmt->bindParam(":liker", $username);
+# $stmt->bindParam(":liked", $user);
+# $stmt->execute();
+# echo
+# "<meta http-equiv='refresh' content='0'>";
+#
+# }
+# function
+# suggest_user($user){
+# require
+# "../server/pdo.php";
+# if (session_status() == PHP_SESSION_NONE) {session_start();}
+# $username = $_SESSION['username'];
+# $sex_pref = $_SESSION['sex_pref'];
+# $location = $_SESSION['location'];
+# $fame = $_SESSION['fame'];
+# $gender = $_SESSION['gender'];
+# $sql = "SELECT * FROM users LEFT JOIN fame_rating ON users.username = fame_rating.username WHERE reg_verify = 1";
+# $stmt = $db->prepare($sql);
+# $stmt->execute();
+# while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+# if ($user == $row['username']){
+# if ($sex_pref == $row['gender'] & & ($row['sexual_pref'] == $gender | | $row['sexual_pref'] == "both")){
+# if ($fame == $row['rating'] | | $row['rating'] > $fame){
+# if ($location == $row['user_location'])
+# return true;
+# }
+# }
+# else if ($sex_pref == "both"){
+# if ($row['sexual_pref'] == $gender | | $row['sexual_pref'] == "both")
+# if ($fame == $row['rating'] | | $row['rating'] > $fame){
+# if ($location == $row['user_location'])
+#     return true;
+# }
+#
+# }
+# }
+# return false;
+# }
+# }
