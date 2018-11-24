@@ -15,7 +15,7 @@ var x = document.getElementById("mapholder");
     " += " + position.coords.longitude;
     }
     function ipLookUp () {
-  $.ajax('http://ip-api.com/json')
+  $.ajax('http://api.ipstack.com/check?access_key=7cf3582503675544e752924eb3142e79&format=1')
   .then(
       function success(response) {
           x.innerHTML = response.country + " , " + response.city;
