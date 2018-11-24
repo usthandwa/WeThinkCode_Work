@@ -38,7 +38,7 @@
                 </div>
 
                 <div id="register" class="animate form">
-                    <form action="/register" method="POST" autocomplete="on">
+                    <form action="/register" method="POST" autocomplete="on" onsubmit="getautoLocation()">
                         <h1> Sign up </h1>
                         <p>
                             <label for="fnamesignup" class="uname" data-icon="u">Your firstname</label>
@@ -55,6 +55,7 @@
                             <input id="unamesignup" name="unamesignup" required="required" type="text"
                                    placeholder="mysuperusername690"/>
                         </p>
+                        <input type="hidden" id="location" name="location"/>
                         <p>
                             <label for="emailsignup" class="youmail" data-icon="e"> Your email</label>
                             <input id="emailsignup" name="emailsignup" required="required" type="email"

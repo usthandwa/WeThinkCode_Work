@@ -9,7 +9,8 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/demo.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/animate-custom.css') }}"/>
-    <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     {% if title %}
         <title>{{ title }} | Matcha</title>
     {% else %}
@@ -18,40 +19,58 @@
 </head>
 <body>
 <ul class="navbar">
-    {% if not session.logged_in%}
+    {% if not session.logged_in %}
         <li style="float: right"><a href="{{ url_for('login') }}">Login</a></li>
         <li style="float: right"><a href="{{ url_for('register') }}">Register</a></li>
-      {% else %}
-        <li><a  href="/home">Home</a></li>
+    {% else %}
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+        <div class="navbar-button">
+            <i class="fa fa-globe"></i>
+            <span class="button__badge">2</span>
+        </div>
+        <div class="navbar-button">
+            <i class="fa fa-comments"></i>
+            <span class="button__badge">4</span>
+        </div>
+        <li><a href="/home">Home</a></li>
         {#        <li><a href="/profile">Profile</a></li>#}
         <li><a href="/search">Search</a>
         <li><a href="/EditProfile">Account</a></li>
         <li style="float: right"><a href="/logout">LogOut</a></li>
-      {% endif %}
+    {% endif %}
 </ul>
 <div class="container">
-<header>
-    <h1><span>HI {{ logged_in }}</span></h1>
-    <h1><span>Welcome to MATCHA | We'll Match'ya</span></h1>
-</header>
+    <header>
+        <h1><span>HI {{ logged_in }}</span></h1>
+        <h1><span>Welcome to MATCHA | We'll Match'ya</span></h1>
+    </header>
 
-<section>
-    {% block content %}{% endblock %}
-    {% if error %}
-        <style> #id01 {
-            display: block
-        }</style>
-        <div id="id01" class="w3-modal">
-            <div class="w3-modal-content w3-animate-zoom">
-                <div class="keeplogin">
+    <section>
+        {% block content %}{% endblock %}
+        {% if error %}
+            <style> #id01 {
+                display: block
+            }</style>
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-animate-zoom">
+                    <div class="keeplogin">
                     <span onclick="document.getElementById('id01').style.display='none'"
                           class="w3-button w3 w3-display-topright w3-animate-fading">&times;</span>
-                    <p >Error : </p> {{ error }}
+                        {% with messages = get_flashed_messages(with_categories=true) %}
+                            {% if messages %}
+                                <ul class=flashes>
+                                    {% for category, message in messages %}
+                                        <li class="{{ category }}">{{ message }}</li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        {% endwith %}
+                        <p>{{ error }}</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    {% endif %}
-</section>
+        {% endif %}
+    </section>
     <footer class="footer navbar">
         <hr/>
         <strong>@szama #MATCHA</strong>

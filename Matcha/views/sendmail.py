@@ -8,9 +8,9 @@ def sendmail(user, email, subject, msg):
 
     sender = 'noreply@matcha.com'
     receivers = [email]
-    title = 'Matcha | Notification <br><br> \n' \
+    title = '\n' \
             '{}'.format(msg)
-    msg_content = '<h2>{title} > <br>\n<font color="green">OK</font></h2>\n'.format(title=title)
+    msg_content = '<p>{title}<br>\n</p2>\n'.format(title=title)
     message = MIMEText(msg_content, 'html')
 
     message['From'] = 'Matcha <{}>' .format(sender)
