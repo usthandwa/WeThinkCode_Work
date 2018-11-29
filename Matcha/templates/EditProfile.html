@@ -1,21 +1,24 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <script type='text/javascript'
+            src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap'
+            async defer></script>
     <div id="wrapper">
         <div id="login" class="animate form">
             <h1>Edit Profile</h1>
             <h4><p>Welcome to your profile, please feel free to update your details, </p>
                 <p>if it's first time here, ensure to give us your gender, sexual preferences and description of
                     yourself </p></h4>
-            <form method="POST" action="#"
+            <form method="POST" action="/editprofile"
                   enctype="multipart/form-data">
                 <table>
                     <td>
-                        <div id="profile-container">
-                            <image id="profileImage" src="/static/images/1.png"/>
-                        </div>
-                        <input id="imageUpload" type="file"
-                               name="profile_photo" placeholder="Photo" required="" capture>
+                        {#                        <div id="profile-container">#}
+                        {#                            <image id="profileImage" src="/static/images/1.png"/>#}
+                        {#                        </div>#}
+                        {#                        <input id="imageUpload" type="file"#}
+                        {#                               name="profile_photo" placeholder="Photo" required="" capture>#}
                         <span class="field__label">Change your firstname</span>
                         <input name="fname"
                                value="{{ firstname }}"
@@ -43,8 +46,14 @@
 
                         </label>
                         <br>
+
                         <label class="field field_type3">
-                            <span class="field__label" id="mapholder"><a onclick="getLocation()">getlocation</a></span>
+                            <span class="field__label">Age</span>
+                            <input type="text" name="age"
+                                   class="field__input"
+                                   value="{{ age }}"
+                                   placeholder="How old are you"/>
+
                         </label>
                         <br>
                         <label class="field field_type3">
@@ -55,34 +64,12 @@
                         </label>
                         <br>
                         <label class="field field_type3">
-                            <span class="field__label">Short Bio</span>
-                            <input type="text" name="bio"
+                            <span class="field__label">Interests</span>
+                            <input type="text" name="interests"
                                    class="field__input"
                                    value="{{ interests }}"
                                    id="add"
                                    placeholder="#vegan, #geek, #piercing" multiple/>
-                            <ul id="list">
-                            </ul>
-                            <script>document.getElementById("add").addEventListener("keyup", function (e) {
-                                if (e.keyCode == 32 || e.key == ' ') {
-                                    txt = document.getElementById("add").value;
-                                    if (txt.split(/[\s, ]+/).length > 2) {
-                                        console.log(txt.split(/[\s, ]+/));
-                                        texts = txt.split(/[\s, ]+/);
-                                        text = texts[texts.length - 2];
-                                        console.log(text + " " + texts.length - 1);
-                                    }
-                                    else
-                                        text = txt;
-                                    delete li;
-                                    li = document.createElement("li");
-                                    li.appendChild(document.createTextNode('#' + text));
-
-                                    document.getElementById("list").appendChild(li);
-                                }
-                            }, true)
-
-                            </script>
                             <br>
                         </label>
                         <span class="field__label">Select Gender</span>
@@ -92,18 +79,11 @@
                             <option value="Female">Female</option>
                             <option value="bisexual">BiSexual</option>
                         </select>
-                        <span class="field__label">Sexual Preference</span>
-                        <select name="gender" class="" multiple>
-                            <option value="None_">All</option>
+                        <span class="field__label">Looking for</span>
+                        <select name="preference" class="">
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
                             <option value="bisexual">BiSexual</option>
-                            <option value="Sap_Men">Sapiosexul Men</option>
-                            <option value="Sep_Both">Sapiosexul Bi</option>
-                            <option value="Sep_WMen">Sapiosexul Women</option>
-                            <option value="Mature_Men">Mature Men</option>
-                            <option value="Mature_WMen">Mature Women</option>
-                            <option value="Mature_Both">Mature Bi</option>
                         </select>
                         <br>
                         <label class="field field_type3">
@@ -128,6 +108,12 @@
                             <input type="hidden" name="chkbox" value="1"/>
                             <input type="checkbox" name="chkbox"
                                    value="0" checked {#% if(row['notif'] == 0)%} {{checked}} {%endif%#}> </label>
+                        <br>
+                        <label class="field field_type3">
+                            <input type="hidden" name="location" id="location"/>
+                            <span class="field__label" id="mapholder"><a onclick="getLocation()">getlocation</a></span>
+                            <div id="myMap" style="position:relative;width:600px;height:400px;"></div>
+                        </label>
                         <br>
                         <p class="login button"><input type="submit" name="submit"
                                                        style="float: left; width: 40%; padding-top: 2%"

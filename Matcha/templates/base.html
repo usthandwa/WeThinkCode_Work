@@ -26,16 +26,16 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
         <div class="navbar-button">
             <i class="fa fa-globe"></i>
-            <span class="button__badge">2</span>
+            <span class="button__badge"> <a href="/#">{{ notif }}</a></span>
         </div>
         <div class="navbar-button">
             <i class="fa fa-comments"></i>
-            <span class="button__badge">4</span>
+            <span class="button__badge"> <a href="/#">{{ chat }}</a></span>
         </div>
         <li><a href="/home">Home</a></li>
         {#        <li><a href="/profile">Profile</a></li>#}
         <li><a href="/search">Search</a>
-        <li><a href="/EditProfile">Account</a></li>
+        <li><a href="editprofile">Account</a></li>
         <li style="float: right"><a href="/logout">LogOut</a></li>
     {% endif %}
 </ul>

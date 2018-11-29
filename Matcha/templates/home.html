@@ -7,15 +7,25 @@
     {% if data %}
         {% for row in data %}
             <div id="wrapper">
-                <div id="1">
 
                     <div id="login" class="animate form change_link">
+                        {##}
+                        {#                        <div id="chat" class="animate form" style="width:90%">#}
+                        {#                            <textarea class="button"#}
+                        {#                                      placeholder="Enter a message"#}
+                        {#                                      style="padding-top: 2%;"#}
+                        {#                                      name="chat"#}
+                        {#                                      id="message">#}
+                        {#                            </textarea>#}
+                        {#                        </div>#}
+
 
                         <div id="profile-container" style="float: left; padding-right: 50px">
                             <a class="to_register" href="#toregister">
                                 <img src="/static/images/1.png" alt="Forest" style="width:150px;position:relative">
                             </a>
                         </div>
+
                         <div style="text-align: center"><h3>{{ row["username"] }} </h3>
                             <h4>{{ row["lastname"] }} Popularity - Likes</h4>
                             <p></p>
@@ -26,8 +36,17 @@
                             <h3>Interests</h3>
                             <p> {{ row["interests"] }} '#'?'
                             </p>
-
+                            <form action="/home" method="POST">
+                                <button class="btn btn-success" name="like"><i class="material-icons">Like</i></button>
+                                <button class="btn btn-danger" name=""><i class="material-icons">close</i></button>
+                                <button class="btn btn-primary" name="block" type="submit"
+                                        value="{{ session.get('uid') }}"><i class="material-icons">block</i>
+                                </button>
+                                <button class="btn btn-primary" name="block"><i class="material-icons">Report</i>
+                                </button>
+                            </form>
                         </div>
+                    </div>
 
                         <div id="register" class="slide animate form change_link">
                             <a class="w3-button w3 w3-display-topright w3-animate-fading"
@@ -66,19 +85,7 @@
                                     x[slideIndex - 1].style.display = "block";
                                 }
                             </script>
-
-                            <div id="chat" class="animate form" style="width:90%">
-
-                    <textarea class="button"
-                              placeholder="Enter a message"
-                              style="padding-top: 2%;"
-                              name="chat"
-                              id="message">
-                    </textarea>
-                            </div>
                         </div>
-                    </div>
-                </div>
             </div>
         {% endfor %}
     {% endif %}

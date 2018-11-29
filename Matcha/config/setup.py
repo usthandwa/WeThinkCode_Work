@@ -57,6 +57,11 @@ def setup():
         `uid` INT UNSIGNED NOT NULL REFERENCES User(userid),
         `friend_id` INT UNSIGNED NOT NULL
         ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+        
+        CREATE TABLE IF NOT EXISTS matches (
+        `propic_id` INT(9) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+		`pair` VARCHAR(255) NOT NULL
+		) ENGINE=InnoDB DEFAULT CHARSET=latin1;
     
         CREATE TABLE IF NOT EXISTS views (
         `uid` INT UNSIGNED NOT NULL REFERENCES User(userid),

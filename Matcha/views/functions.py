@@ -24,110 +24,158 @@ class MyFunctions:
 
     def fame__(self):
 
-        user = self.user
-        views = 0
-        print(user)
-        rating = 0
-        stmt = db.query("SELECT * FROM views WHERE friend_id = %s", (user,))
-
-        for row in stmt:
-            if row['to_user'] == user:
-                if row['notification'].find("viewed") == 0:
-                    views += 1
-        if views <= 5:
-            rating += 1
-        elif 5 < views < 50:
-            for i in range(5, 50, 5):
-                rating += i
-        if views >= 50:
-            rating = 10
-        else:
+        try:
+            user = self.user
+            views = 0
+            print(user)
             rating = 0
-        db.query("UPDATE fame_rating SET rating = %s WHERE username = %s", (rating, user,))
+            stmt = db.query("SELECT * FROM views WHERE friend_id = %s", (user,))
+
+            for row in stmt:
+                if row['to_user'] == user:
+                    if row['notification'].find("viewed") == 0:
+                        views += 1
+            if views <= 5:
+                rating += 1
+            elif 5 < views < 50:
+                for i in range(5, 50, 5):
+                    rating += i
+            if views >= 50:
+                rating = 10
+            else:
+                rating = 0
+            db.query("UPDATE fame_rating SET rating = %s WHERE username = %s", (rating, user,))
+        except Exception as e:
+            print(e)
 
     def __match(self):
 
-        user1 = self.username
-        user2 = self.user
-        count = 0
-        stmt = db.query("SELECT * FROM likes")
+        try:
+            user1 = self.username
+            user2 = self.user
+            count = 0
+            stmt = db.query("SELECT * FROM likes")
 
-        for row in stmt:
-            if row['uid'] == user1 and row['friend_id'] == user2:
-                if row['friend_id'] == user2 and row['uid'] == user1:
-                    count += 2
-            if count == 2:
-                pair = user1 + ' ' + user2
-                db.query("INSERT INTO matches (pair) VALUES (%s)", (pair,))
-                return True
-            else:
-                pair = user1 + ' ' + user2
-                db.query("DELETE FROM matches WHERE pair = %s", (pair,))
-                return False
+            for row in stmt:
+                if row['uid'] == user1 and row['friend_id'] == user2:
+                    if row['friend_id'] == user2 and row['uid'] == user1:
+                        count += 2
+                if count == 2:
+                    pair = user1 + ' ' + user2
+                    db.query("INSERT INTO matches (pair) VALUES (%s)", (pair,))
+                    return True
+                else:
+                    pair = user1 + ' ' + user2
+                    db.query("DELETE FROM matches WHERE pair = %s", (pair,))
+                    return False
+        except Exception as e:
+            print(e)
 
     def check_notification(self):
 
-        username = self.username
-        notif = 0
+        try:
+            username = self.username
+            notif = 0
 
-        sql = db.query("SELECT * FROM notifications WHERE to_user = %s", (username,))
-        for row in sql:
-            if row['seen'] == "no":
-                notif += 1
-            if notif:
-                return notif
-            else:
-                return False
+            sql = db.query("SELECT * FROM notifications WHERE to_user = %s", (username,))
+            for row in sql:
+                if row['seen'] == "no":
+                    notif += 1
+                if notif:
+                    return notif
+                else:
+                    return False
+        except Exception as e:
+            print(e)
 
     def read_notifications(self):
 
-        username = self.username
-        db.query("UPDATE notifications SET seen = 'yes' WHERE to_user = %s", (username,))
+        try:
+            username = self.username
+            db.query("UPDATE notifications SET seen = 'yes' WHERE to_user = %s", (username,))
+        except Exception as e:
+            print(e)
 
     def is_blocked(self, blocker, uid):
 
-        sql = db.query("SELECT * FROM block WHERE blocked = %s", (uid,))
-        blocked = 0
-        for row in sql:
-            if row['blocker'] == blocker:
-                blocked = 1
-            if blocked:
-                return True
-            else:
-                return False
+        try:
+            sql = db.query("SELECT * FROM block WHERE blocked = %s", (uid,))
+            blocked = 0
+            for row in sql:
+                if row['blocker'] == blocker:
+                    blocked = 1
+                if blocked:
+                    return True
+                else:
+                    return False
+        except Exception as e:
+            print(e)
 
     def remove_user(self):
 
-        username = self.username
-        user = self.user
+        try:
+            username = self.username
+            user = self.user
 
-        pair = username + ' ' + user
-        db.query("DELETE FROM matches WHERE pair = %s", (pair,))
+            pair = username + ' ' + user
+            db.query("DELETE FROM matches WHERE pair = %s", (pair,))
 
-        pair = user + ' ' + username
-        db.query("DELETE FROM matches WHERE pair = %s", (pair,))
-        db.query("DELETE FROM likes WHERE liker = %s AND liked = %s", (username, user,))
+            pair = user + ' ' + username
+            db.query("DELETE FROM matches WHERE pair = %s", (pair,))
+            db.query("DELETE FROM likes WHERE liker = %s AND liked = %s", (username, user,))
+        except Exception as e:
+            print(e)
 
     def suggest_user(self, SESSION):
 
-        user = self.user
-        username = SESSION['username'];
-        sex_pref = SESSION['sex_pref'];
-        location = SESSION['location'];
-        fame = SESSION['fame'];
-        gender = SESSION['gender'];
-        sql = db.query(
-            "SELECT * FROM users LEFT JOIN fame_rating ON users.username = fame_rating.username WHERE reg_verify = 1")
+        try:
+            user = self.user
+            username = SESSION['username'];
+            sex_pref = SESSION['sex_pref'];
+            location = SESSION['location'];
+            fame = SESSION['fame'];
+            gender = SESSION['gender'];
+            sql = db.query(
+                "SELECT * FROM users LEFT JOIN fame_rating ON users.username = fame_rating.username WHERE reg_verify = 1")
 
-        for row in sql:
-            if user == row['username']:
-                if sex_pref == row['gender'] and row['sexual_pref'] == gender or row['sexual_pref'] == "both":
-                    if fame == row['rating'] or row['rating'] > fame:
-                        if location == row['user_location']:
-                            return True
-                elif sex_pref == "both":
-                    if row['sexual_pref'] == gender or row['sexual_pref'] == "both":
+            for row in sql:
+                if user == row['username']:
+                    if sex_pref == row['gender'] and row['sexual_pref'] == gender or row['sexual_pref'] == "both":
                         if fame == row['rating'] or row['rating'] > fame:
                             if location == row['user_location']:
                                 return True
-            return False
+                    elif sex_pref == "both":
+                        if row['sexual_pref'] == gender or row['sexual_pref'] == "both":
+                            if fame == row['rating'] or row['rating'] > fame:
+                                if location == row['user_location']:
+                                    return True
+                return False
+        except Exception as e:
+            print(e)
+
+    def login_status(self):
+
+        try:
+            sql = db.query("select Verify from user WHERE username = %s"(self.username, ))
+            for row in sql:
+                if row['Verify'] == '2':
+                    return True
+                else:
+                    return False
+        except Exception as e:
+            print(e)
+
+    def report(self):
+
+        try:
+            db.query("INSERT INTO report (uid, reported_id) VALUES (%s, %s)", (self.user, self.username))
+        except Exception as e:
+            print(e)
+
+    def block(self):
+
+        try:
+            print("user" + str(self.user) + "blocked!!!")
+            db.query("INSERT INTO blocked (uid, blocked_id) VALUES (%s, %s)", (self.user, self.username))
+        except Exception as e:
+            print(e)

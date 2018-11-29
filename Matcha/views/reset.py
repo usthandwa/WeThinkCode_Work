@@ -83,20 +83,21 @@ def reset(email):
         return echo
 
 
-def change_pw(passw, cpass, *args):
-    if args:
-        uid = get_hash(args[1])
-        code = args[2]
+def check(uid, code):
         stmt = db.query("SELECT * FROM user WHERE userid=%s AND Token=%s", (uid, code,))
         if not stmt:
             return "Error: was not able to verify user"
+        return "Email, confirmed, please proceed to <br> You can now change your password"
+
+
+def change_pw(passw, cpass, uid):
     if cpass != passw:
-        return "Error: please confirm your password"
+        return "Error: <br>Please confirm your password"
     else:
-        code = 1;
+        code = 1
         passwd = config.get_hash(cpass)
-        db.query("UPDATE user SET pword=%s, Token=%s WHERE userid=%s", (passwd, code, args[1],))
-        return "Password Changed"
+        db.query("UPDATE user SET pword=%s, Token=%s WHERE userid=%s", (passwd, code, uid,))
+        return "Done: <br>Password Changed"
 
 # function
 # login_status($user){

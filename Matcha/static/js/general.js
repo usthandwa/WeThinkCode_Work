@@ -42,3 +42,27 @@ function fasterPreview(uploader) {
 $("#imageUpload").change(function () {
     fasterPreview(this);
 });
+
+
+// <ul id="list">
+//                             </ul>
+//                             <script>document.getElementById("add").addEventListener("keyup", function (e) {
+//                                 if (e.keyCode == 32 || e.key == ' ') {
+//                                     txt = document.getElementById("add").value;
+//                                     if (txt.split(/[\s, ]+/).length > 2) {
+//                                         console.log(txt.split(/[\s, ]+/));
+//                                         texts = txt.split(/[\s, ]+/);
+//                                         text = texts[texts.length - 2];
+//                                         console.log(text + " " + texts.length - 1);
+//                                     }
+//                                     else
+//                                         text = txt;
+//                                     delete li;
+//                                     li = document.createElement("li");
+//                                     li.appendChild(document.createTextNode('#' + text));
+//
+//                                     document.getElementById("list").appendChild(li);
+//                                 }
+//                             }, true)
+//
+//                             </script>
