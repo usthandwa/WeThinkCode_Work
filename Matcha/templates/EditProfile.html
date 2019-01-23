@@ -14,11 +14,11 @@
                   enctype="multipart/form-data">
                 <table>
                     <td>
-                        {#                        <div id="profile-container">#}
-                        {#                            <image id="profileImage" src="/static/images/1.png"/>#}
-                        {#                        </div>#}
-                        {#                        <input id="imageUpload" type="file"#}
-                        {#                               name="profile_photo" placeholder="Photo" required="" capture>#}
+                        <div id="profile-container">
+                            <image id="profileImage" src="/static/images/1.png"/>
+                        </div>
+                        <input id="imageUpload" type="file"
+                               name="profile_photo" placeholder="Photo" required="" capture>
                         <span class="field__label">Change your firstname</span>
                         <input name="fname"
                                value="{{ firstname }}"
@@ -81,6 +81,7 @@
                         </select>
                         <span class="field__label">Looking for</span>
                         <select name="preference" class="">
+                            <option value="select..."></option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
                             <option value="bisexual">BiSexual</option>

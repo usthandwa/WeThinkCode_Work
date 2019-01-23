@@ -22,16 +22,12 @@ def setup():
         sex VARCHAR(130),
         age INT(6) UNSIGNED,
         description text,
+        sexual_pref text,
         interests text,
         Token VARCHAR(250) NOT NULL DEFAULT '0',
-        Verify VARCHAR (250) NOT NULL DEFAULT '0',
+        verify VARCHAR (250) NOT NULL DEFAULT '0',
         notif VARCHAR (250) NOT NULL DEFAULT '0',
         reg_date TIMESTAMP
-        ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-        
-        CREATE TABLE IF NOT EXISTS user_interest (
-        `uid` INT UNSIGNED NOT NULL REFERENCES User(userid),
-        `interest_id` INT UNSIGNED
         ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
         
         CREATE TABLE IF NOT EXISTS fame_rating (
@@ -88,6 +84,11 @@ def setup():
         CREATE TABLE IF NOT EXISTS report (
         `uid` INT UNSIGNED NOT NULL REFERENCES User(userid),
         `reported_id` INT UNSIGNED NOT NULL
-        ) ENGINE=InnoDB DEFAULT CHARSET=latin1; """)
+        ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+        
+        INSERT INTO interests (interest) 
+        VALUES ("Food"), ("Books"), ("Geek"), ("Car"), ("Vegan");
+        
+        """)
     except Exception as e:
         print('TABLE NOT CREATED\n {0}'.format(e))

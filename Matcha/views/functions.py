@@ -1,6 +1,11 @@
 from config import db
 
 
+def get_all():
+    res = db.query("SELECT * FROM User ORDER BY username DESC, location ASC, age ASC")
+    return res
+
+
 def getadd():
     import requests
     import json
@@ -22,7 +27,7 @@ class MyFunctions:
         self.user = user
         self.username = username
 
-    def fame__(self):
+    def fame(self):
 
         try:
             user = self.user
@@ -48,11 +53,11 @@ class MyFunctions:
         except Exception as e:
             print(e)
 
-    def __match(self):
+    def match(self):
 
         try:
-            user1 = self.username
-            user2 = self.user
+            user1 = str(self.username)
+            user2 = str(self.user)
             count = 0
             stmt = db.query("SELECT * FROM likes")
 
@@ -63,10 +68,12 @@ class MyFunctions:
                 if count == 2:
                     pair = user1 + ' ' + user2
                     db.query("INSERT INTO matches (pair) VALUES (%s)", (pair,))
+                    print(pair + "\n")
                     return True
                 else:
                     pair = user1 + ' ' + user2
                     db.query("DELETE FROM matches WHERE pair = %s", (pair,))
+                    print(pair + "__2")
                     return False
         except Exception as e:
             print(e)
@@ -130,11 +137,11 @@ class MyFunctions:
 
         try:
             user = self.user
-            username = SESSION['username'];
-            sex_pref = SESSION['sex_pref'];
-            location = SESSION['location'];
-            fame = SESSION['fame'];
-            gender = SESSION['gender'];
+            username = SESSION['username']
+            sex_pref = SESSION['sex_pref']
+            location = SESSION['location']
+            fame = SESSION['fame']
+            gender = SESSION['gender']
             sql = db.query(
                 "SELECT * FROM users LEFT JOIN fame_rating ON users.username = fame_rating.username WHERE reg_verify = 1")
 
@@ -156,7 +163,7 @@ class MyFunctions:
     def login_status(self):
 
         try:
-            sql = db.query("select Verify from user WHERE username = %s"(self.username, ))
+            sql = db.query("select verify from user WHERE username = %s"(self.username, ))
             for row in sql:
                 if row['Verify'] == '2':
                     return True
@@ -179,3 +186,63 @@ class MyFunctions:
             db.query("INSERT INTO blocked (uid, blocked_id) VALUES (%s, %s)", (self.user, self.username))
         except Exception as e:
             print(e)
+
+    def like(self):
+
+        try:
+            print("user" + str(self.user) + "liked!!!")
+            db.query("INSERT INTO likes (uid, friend_id) VALUES (%s, %s)", (self.user, self.username))
+        except Exception as e:
+            print(e)
+
+
+def rsearch(name, age, fame, location, interest, preference):
+    if name:
+        sql = f"SELECT * FROM fame_rating LEFT JOIN user ON fame_rating.username = user.username LEFT JOIN interests ON fame_rating.username = user.username WHERE user.username LIKE '%{name}%' AND verify = 1";
+        if age:
+            sql += f" AND age LIKE '%{age}%'"
+        if fame:
+            sql += f" AND rating LIKE '%{fame}%'"
+        if location:
+            sql += f" AND location LIKE '%{location}%'"
+        if interest:
+            sql += f" AND interests LIKE '%{interest}%'"
+        try:
+            stmt = db.query(sql)
+            print(stmt)
+            return stmt
+        except Exception as e:
+            print("Tiny mistake {} here!%", e)
+
+    elif fame:
+        sql = f"SELECT * FROM fame_rating LEFT JOIN user ON fame_rating.username = user.username LEFT JOIN interests ON fame_rating.username = interests.username WHERE rating LIKE '%{fame}%' AND verify = 1";
+        if age:
+            sql += f" AND age LIKE '%{age}%'"
+        if name:
+            sql += f" AND user.username LIKE '%{name}%'"
+        if location:
+            sql += f" AND location LIKE '%{location}%'"
+        if interest:
+            sql += f" AND interests LIKE '%{interest}%'"
+        try:
+            stmt = db.query(sql)
+            print(stmt)
+            return stmt
+        except Exception as e:
+            print("Tiny mistake %", e)
+    elif interest:
+        sql = f"SELECT * FROM fame_rating LEFT JOIN user ON fame_rating.username = user.username LEFT JOIN interests ON fame_rating.username = interests.username WHERE interests LIKE '%{interest}%' AND verify = 1 or 2";
+        if age:
+            sql += f"AND age LIKE '%{age}%'"
+        if name:
+            sql += f" AND username LIKE '%{name}%'"
+        if location:
+            sql += f"""AND location LIKE '%{location}%'"""
+        if interest:
+            sql += f""" AND interests LIKE '%{interest}%'"""
+        try:
+            stmt = db.query(sql)
+            print(stmt)
+            return stmt
+        except Exception as e:
+            print("Tiny mistake %", e)
