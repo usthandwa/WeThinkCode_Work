@@ -1,4 +1,6 @@
 import re, os, html
+from PIL import Image
+from resizeimage import resizeimage
 
 from flask import Flask, render_template, redirect, url_for, request, session, flash
 from config.db import query
@@ -7,8 +9,10 @@ from views.reset import *
 from views.functions import *
 from views.functions import rsearch
 from werkzeug.utils import secure_filename
+from flask_socketio import SocketIO
 
-UPLOAD_FOLDER = "/static/images"
+UPLOAD_FOLDER = 'static/images'
+print(UPLOAD_FOLDER)
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 
 app = Flask(__name__)
@@ -16,6 +20,7 @@ app.secret_key = "7h1$/H0u$3_b17ch1n\'"
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 setup()
+socketio = SocketIO(app)
 
 
 @app.route('/')
@@ -40,6 +45,7 @@ def browse():
         test = MyFunctions(session.get('uid'), '1')
         flash("Logged in successfully.")
         result = get_all()
+        imgs = query("""SELECT * FROM user_img""")
         test.match()
         test.fame()
         if request.method == 'POST':
@@ -52,7 +58,10 @@ def browse():
             if request.form.get('like'):
                 print("to test like")
                 test.like()
-        return render_template('home.html', title='Home', logged_in=session.get('logged_in'), data=result)
+            if request.form.get('chat'):
+                print("to test like")
+                chat()
+        return render_template('home.html', title='Home', logged_in=session.get('logged_in'), data=result, imgs=imgs)
 
 
 # Route for handling the login page logic
@@ -143,7 +152,7 @@ def profile():
 def editprofile():
     error = ""
     passw = ""
-    res = ""
+    res = query("""SELECT * FROM User WHERE userid= %s""", (session.get('uid'),))
     if not session.get('logged_in'):
         return login()
     else:
@@ -160,7 +169,7 @@ def editprofile():
             interests = html.escape(request.form['interests'])
             bio = html.escape(request.form['bio'])
             # notification = html.escape(request.form['bio'])
-            res = query("""SELECT * FROM User WHERE userid= %s""", (session.get('uid'),))
+            print(res + "\n + results")
             if re.match(r"[^@\s]+@[^@\s]+\.[a-zA-Z0-9]+$", email):
                 if request.form['pass'] == request.form['confirmpass']:
                     if re.match(
@@ -199,6 +208,7 @@ def editprofile():
                 if interests:
                     query(sql + "interests = %s WHERE userid = %s", (interests, session.get('uid'),))
                 error = "SUCCESS! update, successful"
+            print(res + "\t this is res + err " + error)
         return render_template('EditProfile.html', error=error, title='Account', logged_in=session.get('logged_in'),
                                res=res)
 
@@ -261,8 +271,23 @@ def allowed_file(filename):
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
+def resize(infile):
+    size = 128, 128
+    outfile = os.path.splitext(infile)[0] + ".thumbnail"
+    if infile != outfile:
+        try:
+            im = Image.open(infile)
+            im.thumbnail(size, Image.ANTIALIAS)
+            im.save(outfile, "JPEG")
+        except IOError:
+            print
+            "cannot create thumbnail for '%s'" % infile
+
+
 @app.route('/upload', methods=['GET', 'POST'])
 def upload_file():
+    error = ""
+    res = query("""SELECT * FROM user_img WHERE uid = %s LIMIT 5""", (session.get('uid'),))
     if request.method == 'POST':
         # check if the post request has the file part
         if 'file' not in request.files:
@@ -277,19 +302,27 @@ def upload_file():
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            return redirect(url_for('/upload',
+            f_ = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+            resize(f_)
+            query("insert into user_img (uid, img_path, img_name, active) values (%s, %s, %s, '0')",
+                  (session.get('uid'), f_, filename,))
+            return redirect(url_for('upload_file',
                                     filename=filename))
-    return '''
-    <!doctype html>
-    <title>Upload new File</title>
-    <h1>Upload new File</h1>
-    <form method=post enctype=multipart/form-data>
-      <p><input type=file name=file>
-         <input type=submit value=Upload>
-    </form>
-    '''
+    return render_template('upload.html', error=error, title='Account', logged_in=session.get('logged_in'),
+                           res=res)
+
+
+def messageReceived(methods=['GET', 'POST']):
+    print('message was received!!!')
+
+
+@socketio.on('my event')
+def handle_my_custom_event(json, methods=['GET', 'POST']):
+    print('received my event: ' + str(json))
+    socketio.emit('my response', json, callback=messageReceived)
 
 
 if __name__ == '__main__':
     app.debug = True
     app.run()
+    socketio.run(app, debug=True)

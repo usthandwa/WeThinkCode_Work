@@ -44,6 +44,24 @@ $("#imageUpload").change(function () {
 });
 
 
+function select(ob) {
+    try {
+        console.log(ob);
+        $.ajaxSetup({
+            cache: false
+        });
+        $.ajax({
+            success: function (data) {
+                console.log(data);
+            }
+        });
+    }
+    catch (err) {
+        alert('Wait something\'s not right: ' + err);
+    }
+    return false;
+}
+
 // <ul id="list">
 //                             </ul>
 //                             <script>document.getElementById("add").addEventListener("keyup", function (e) {

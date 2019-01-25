@@ -27,6 +27,7 @@ def setup():
         Token VARCHAR(250) NOT NULL DEFAULT '0',
         verify VARCHAR (250) NOT NULL DEFAULT '0',
         notif VARCHAR (250) NOT NULL DEFAULT '0',
+        display_img VARCHAR (250),
         reg_date TIMESTAMP
         ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
         

@@ -8,84 +8,79 @@
         {% for row in data %}
             <div id="wrapper">
 
-                    <div id="login" class="animate form change_link">
-                        {##}
-                        {#                        <div id="chat" class="animate form" style="width:90%">#}
-                        {#                            <textarea class="button"#}
-                        {#                                      placeholder="Enter a message"#}
-                        {#                                      style="padding-top: 2%;"#}
-                        {#                                      name="chat"#}
-                        {#                                      id="message">#}
-                        {#                            </textarea>#}
-                        {#                        </div>#}
-
-
-                        <div id="profile-container" style="float: left; padding-right: 50px">
-                            <a class="to_register" href="#toregister">
-                                <img src="/static/images/1.png" alt="Forest" style="width:150px;position:relative">
-                            </a>
-                        </div>
-
-                        <div style="text-align: center"><h3>{{ row["username"] }} </h3>
-                            <h4>{{ row["lastname"] }} Popularity - Likes</h4>
-                            <p></p>
-                            <p>
-                            <h3>Bio</h3>
-                            {{ row["discription"] }}
-                            </p>
-                            <h3>Interests</h3>
-                            <p> {{ row["interests"] }} '#'?'
-                            </p>
-                            <form action="/home" method="POST">
-                                <button class="btn btn-success" name="like"><i class="material-icons">Like</i></button>
-                                <button class="btn btn-danger" name=""><i class="material-icons">close</i></button>
-                                <button class="btn btn-primary" name="block" type="submit"
-                                        value="{{ session.get('uid') }}"><i class="material-icons">block</i>
-                                </button>
-                                <button class="btn btn-primary" name="block"><i class="material-icons">Report</i>
-                                </button>
-                            </form>
-                        </div>
+                <div id="login" class="animate form change_link">
+                    <div id="profile-container" style="float: left; padding-right: 50px">
+                        <a class="to_register" href="#toregister">
+                            <img src="{{ row['imp_path'] }}" alt="profile picture"
+                                 style="width:150px;position:relative">
+                        </a>
                     </div>
 
-                        <div id="register" class="slide animate form change_link">
-                            <a class="w3-button w3 w3-display-topright w3-animate-fading"
-                               href="#tologin">&times;</a>
+                    <div style="text-align: center"><h3>{{ row["username"] }} </h3>
+                        <h4>{{ row["lastname"] }} Popularity - Likes</h4>
+                        <p></p>
+                        <p>
+                        <h3>Bio</h3>
+                        {{ row["discription"] }}
+                        </p>
+                        <h3>Interests</h3>
+                        <p> {{ row["interests"] }} '#'?'
+                        </p>
+                        <form action="/home" method="POST">
+                            {% if not likes %}
+                                <button class="btn btn-success" name="like"><i class="material-icons">Like</i></button>
+                            {% endif %}
+                            <button class="btn btn-danger" name=""><i class="material-icons">close</i></button>
+                            <button class="btn btn-primary" name="block" type="submit"
+                                    value="{{ session.get('uid') }}"><i class="material-icons">block</i>
+                            </button>
+                            <button class="btn btn-primary" name="report"><i class="material-icons">Report</i>
+                            </button>
+                            {% if likes == '1' %}
+                                <button class="btn btn-primary" name="block"><i class="material-icons">Report</i>
+                                </button>
+                            {% endif %}
+                        </form>
+                    </div>
+                </div>
 
-                            <img class="mySlides" src="/static/images/1.png" style="width:100%">
-                            <img class="mySlides" src="/static/images/2.png" style="width:100%">
-                            <img class="mySlides" src="/static/images/3.png" style="width:100%">
-                            <img class="mySlides" src="/static/images/4.png" style="width:100%">
-                            <img class="mySlides" src="/static/images/5.png" style="width:100%">
+                <div id="register" class="slide animate form change_link">
+                    <a class="w3-button w3 w3-display-topright w3-animate-fading"
+                       href="#tologin">&times;</a>
+                    {% for res in imgs %}
+                        {% if row['userid']  == res['uid'] %}
+                            <img class="mySlides" src="{{ res['img_path'] }}" style="width:100%">
+                        {% endif %}
+                    {% endfor %}
 
-                            <a class="prev" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
-                            <a class="next" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
-                            <a href="#tochat">like user Chat to user</a>
+                    <a class="prev" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+                    <a class="next" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+                    <a href="#tochat">like user Chat to user</a>
 
-                            <script>
-                                var slideIndex = 1;
-                                showDivs(slideIndex);
+                    <script>
+                        var slideIndex = 1;
+                        showDivs(slideIndex);
 
-                                function plusDivs(n) {
-                                    showDivs(slideIndex += n);
-                                }
+                        function plusDivs(n) {
+                            showDivs(slideIndex += n);
+                        }
 
-                                function showDivs(n) {
-                                    var i;
-                                    var x = document.getElementsByClassName("mySlides");
-                                    if (n > x.length) {
-                                        slideIndex = 1
-                                    }
-                                    if (n < 1) {
-                                        slideIndex = x.length
-                                    }
-                                    for (i = 0; i < x.length; i++) {
-                                        x[i].style.display = "none";
-                                    }
-                                    x[slideIndex - 1].style.display = "block";
-                                }
-                            </script>
-                        </div>
+                        function showDivs(n) {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            if (n > x.length) {
+                                slideIndex = 1
+                            }
+                            if (n < 1) {
+                                slideIndex = x.length
+                            }
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            x[slideIndex - 1].style.display = "block";
+                        }
+                    </script>
+                </div>
             </div>
         {% endfor %}
     {% endif %}

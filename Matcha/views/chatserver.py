@@ -1,14 +1,14 @@
 from flask import render_template, flash, redirect, request, redirect, url_for, flash, abort, g, session, escape, \
     jsonify, Request, Flask, Response, escape
-from app import app, mysql, mail, Message, socketio, connDb
+# from app import mysql, mail, Message, socketio, connDb
 from flask_socketio import SocketIO, send, join_room, leave_room, close_room, rooms, disconnect
 from config.db import query
 
 
 @app.route('/messages/<surname>/<name>/<ident>')
 def messaging(surname, name, ident):
-    if check_url_user(surname, name, ident) == 0:
-        return redirect(url_for('home'))
+    # if check_url_user(surname, name, ident) == 0:
+    #     return redirect(url_for('home'))
     id_matches = query("SELECT id_user2 FROM matches WHERE id_user1 = '" + str(
         session['user_id']) + "' UNION SELECT id_user1 FROM matches WHERE id_user2 = '" + str(session['user_id']) + "'")
     tab_users = []

@@ -10,29 +10,30 @@
             <h4><p>Welcome to your profile, please feel free to update your details, </p>
                 <p>if it's first time here, ensure to give us your gender, sexual preferences and description of
                     yourself </p></h4>
+            {% for row in res %}
             <form method="POST" action="/editprofile"
                   enctype="multipart/form-data">
                 <table>
                     <td>
                         <div id="profile-container">
-                            <image id="profileImage" src="/static/images/1.png"/>
+                            <image id="profileImage" src="{{ row["img_path"] }}"/>
                         </div>
-                        <input id="imageUpload" type="file"
-                               name="profile_photo" placeholder="Photo" required="" capture>
+                        {#                        <input id="imageUpload" type="file"#}
+                        {#                               name="profile_photo" placeholder="Photo" required="" capture>#}
                         <span class="field__label">Change your firstname</span>
                         <input name="fname"
-                               value="{{ firstname }}"
+                               value="{{ row['firstname'] }}"
                                placeholder="change your firstname"/>
                         <label class="field field_type3">
                             <span class="field__label">Change your lastname</span>
                             <input name="lname" class="field__input"
-                                   value="{{ lastname }}"
+                                   value="{{ row['lastname'] }}"
                                    placeholder="change your lastname"/>
                         </label>
                         <label class="field field_type3">
                             <span class="field__label">Change your username</span>
                             <input name="uname" class="field__input"
-                                   value="{{ username }}"
+                                   value="{{ row['username'] }}"
                                    placeholder="change username"/>
 
                         </label>
@@ -41,7 +42,7 @@
                             <span class="field__label">Change your e-mail</span>
                             <input type="email" name="email"
                                    class="field__input"
-                                   value="{{ email }}"
+                                   value="{{ row['email'] }}"
                                    placeholder="Change your e-mail"/>
 
                         </label>
@@ -51,7 +52,7 @@
                             <span class="field__label">Age</span>
                             <input type="text" name="age"
                                    class="field__input"
-                                   value="{{ age }}"
+                                   value="{{ row['age'] }}"
                                    placeholder="How old are you"/>
 
                         </label>
@@ -67,13 +68,14 @@
                             <span class="field__label">Interests</span>
                             <input type="text" name="interests"
                                    class="field__input"
-                                   value="{{ interests }}"
+                                   value="{{ row['interests'] }}"
                                    id="add"
                                    placeholder="#vegan, #geek, #piercing" multiple/>
                             <br>
                         </label>
                         <span class="field__label">Select Gender</span>
                         <select name="gender" class="">
+                            <option value="">{{ row['sex'] }}</option>
                             <option value="None_">None Binary</option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
@@ -124,6 +126,7 @@
                     </td>
                 </table>
             </form>
+            {% endfor %}
         </div>
     </div>
 {% endblock %}

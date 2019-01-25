@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block content %}
+
+
+    <div id="wrapper">
+        <div class="w3-grid">
+            {% for row in res %}
+                <div class="grid-item">
+                    <img id="Img" src="{{ row["img_path"] }}"/>
+                    <button name="Delete" type="submit" value="{{ row['img_id'] }}" onclick="select(this);"> DELETE
+                    </button>
+                    <button name="profilep" type="submit" value="{{ row['img_id'] }}" onclick="select(this);"> Make
+                        profile
+                    </button>
+                </div>
+            {% endfor %}
+        </div>
+        <form method=post enctype=multipart/form-data>
+            <p><input type=file name=file>
+                <input type=submit value=Upload>
+        </form>
+    </div>
+{% endblock %}
