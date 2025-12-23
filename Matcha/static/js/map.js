@@ -8,6 +8,10 @@ var x = document.getElementById("mapholder");
         }
     }
     function sendPosition(position) {
+        if (!position) {
+            x.innerHTML = "Geolocation is not available";
+            return;
+        }
         var lat = position.coords.latitude;
         var long = position.coords.longitude;
 
